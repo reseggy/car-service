@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 306px;
+  margin: 0 auto;
+  max-height: 127px;
+  min-height: 127px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 142px;
+}
+
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  min-width: 394px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 17px;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.link_active {
+  color: red;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  background: none;
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 50px;
+  padding: 12px 20px;
+  cursor: pointer;
+
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-width: 196px;
+}
+
+.contact {
+  padding: 12px 30px;
+  border: 1px solid rgb(221, 41, 63);
+  background: rgb(221, 41, 63);
+  min-width: 145px;
+}
