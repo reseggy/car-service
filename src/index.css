@@ -134,3 +134,18 @@ table {
   --background: rgb(26, 25, 25);
   --font-family: 'Inter', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(60, 60, 60);
+}
