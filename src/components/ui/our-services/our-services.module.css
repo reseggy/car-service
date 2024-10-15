@@ -1,0 +1,22 @@
+.section {
+  max-width: 1417px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

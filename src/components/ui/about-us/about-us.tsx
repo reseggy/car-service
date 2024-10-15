@@ -1,9 +1,9 @@
 import { TAboutUsProps } from './types';
 import { FC } from 'react';
+import { Advantage } from '../../advantage';
 import styles from './about-us.module.css';
 import aboutUsCar from '../../../assets/aboutUsCar.png';
 import advantageProfService from '../../../assets/advantageProfService.svg';
-import { Advantage } from '../../advantage';
 import advantageFastRepairs from '../../../assets/advantageFastRepairs.svg';
 import advantageQuality from '../../../assets/advantageQuality.svg';
 import advantageApproach from '../../../assets/advantageApproach.svg';

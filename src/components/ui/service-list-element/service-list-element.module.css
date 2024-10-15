@@ -1,38 +1,48 @@
-.advantages {
+.item {
+  min-width: 1417px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  gap: 50px;
+  align-items: center;
+  max-height: 160px;
   border: 1px solid rgb(55, 55, 55);
   border-radius: 20px;
-  padding: 30px 20px;
   background-color: rgba(37, 36, 36, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  min-height: 339px;
-  max-width: 339.25px;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.advantagesText {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.image {
+  width: 549px;
+  height: 120px;
+  border-radius: 15px;
 }
 
-.advantagesTitle {
-  color: var(--primary-color);
+.itemText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.title {
+  color: rgb(221, 41, 63);
   font-family: var(--font-family);
   font-size: 26px;
   font-weight: 700;
   line-height: 120%;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.subsectionText {
+.text {
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
-  text-align: center;
+  text-align: left;
 }
