@@ -1,3 +1,3 @@
-export type TAppHeaderUIProps = {
+export interface TAppHeaderUIProps {
   lang: string;
-};
+}
