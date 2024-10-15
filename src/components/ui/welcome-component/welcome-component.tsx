@@ -13,7 +13,9 @@ export const WelcomeComponentUI: FC = () => {
         </h1>
         <div className={styles.catalog}>
           <p className={styles.subtitle}>
-          Our top priority is to provide our customers with the best service at an affordable price. Entrust your transportation to professionals and enjoy flawless operation of your car!
+            Our top priority is to provide our customers with the best service
+            at an affordable price. Entrust your transportation to professionals
+            and enjoy flawless operation of your car!
           </p>
           <button className={styles.button_catalog}>
             To catalog
