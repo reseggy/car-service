@@ -1,0 +1,84 @@
+.saleCarsSection {
+  max-width: 1417px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.carouselContainer {
+  width: 100%;
+  margin-bottom: 25px; /* 25px is the height of the dots */
+}
+
+.dotsList {
+  max-width: 100%;
+  max-height: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dotsList li {
+  min-width: 15px;
+  max-width: 30px;
+  width: 15px;
+  height: 5px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  background-color: #302f2f;
+  min-width: 15px;
+  max-width: 30px;
+  width: 15px;
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s linear;
+  border-radius: 100px;
+}
+
+.dotsList :global(li.slick-active) {
+  /* global is added to access the class to change the styles of the active dot */
+  width: 30px;
+}
+
+.dotsList :global(li.slick-active) .dot {
+  /* global is added to access the class to change the styles of the active dot */
+  background-color: #dd293f;
+  width: 30px;
+}

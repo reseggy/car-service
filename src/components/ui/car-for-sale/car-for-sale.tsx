@@ -11,7 +11,7 @@ export const CarForSaleUI: FC<TCarForSaleProps> = ({
   imgAlt
 }) => {
   return (
-    <li className={styles.item}>
+    <div className={styles.item}>
       {/* РЕАЛИЗОВАТЬ ПРИ КЛИКЕ НА КНОПКУ ОТКРЫТИЕ ОПРЕДЕЛЕННОЙ СТРАНИЦЫ
       ОПРЕДЕЛЕННОЙ ТАЧКИ */}
       <button className={styles.button}>
@@ -21,10 +21,10 @@ export const CarForSaleUI: FC<TCarForSaleProps> = ({
           <div className={styles.itemText}>
             <p className={styles.price}>${price}</p>
             <img src={separator} alt='separator' />
-            <p className={styles.mileageText}>{mileage}</p>
+            <p className={styles.mileageText}>{mileage} km</p>
           </div>
         </div>
       </button>
-    </li>
+    </div>
   );
 };
