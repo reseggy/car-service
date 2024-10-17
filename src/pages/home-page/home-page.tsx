@@ -69,6 +69,8 @@ const carItems = [
   //TODO: Add more items
 ];
 
+import { Feedback } from '../../components/feedback';
+
 export const HomePage: FC = () => {
   return (
     <div className={styles.page}>
@@ -76,6 +78,11 @@ export const HomePage: FC = () => {
       <AboutUs />
       <OurServices />
       <SaleCarsCarousel items={carItems} />
+      <Feedback
+        name='Alex Safdsfsdgdf'
+        review='Reliable and honest craftsmen! I can always trust them completely with my vehicle. They do everything they can to keep my vehicle running flawlessly.'
+        imgSrc='https://i.pravatar.cc/300'
+      />
     </div>
   );
 };
