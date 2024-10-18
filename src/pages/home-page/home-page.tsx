@@ -9,6 +9,7 @@ import carSaleGls2 from '../../assets/carSaleGls2.png';
 import carSaleGls3 from '../../assets/carSaleGls3.png';
 import carSaleGls4 from '../../assets/carSaleGls4.png';
 import { FeedbackCarousel } from '../../components/feedback-carousel';
+import { InstagramPosts } from '../../components/instagram-posts';
 
 const carItems = [
   {
@@ -132,6 +133,26 @@ const userItems = [
     imgSrc: 'https://i.pravatar.cc/304'
   }
 ];
+import postPhoto1 from '../../assets/post1.jpg';
+import postPhoto2 from '../../assets/post2.png';
+import postPhoto3 from '../../assets/post3.jpg';
+const instagramItems = [
+  {
+    imgSrc: postPhoto1,
+    likes: 111,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...'
+  },
+  {
+    imgSrc: postPhoto2,
+    likes: 222,
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae non facilis in reprehenderit nam odio tenetur similique quis consequuntur excepturi deleniti, atque sed! Officiis dolores nihil quo sed deleniti.'
+  },
+  {
+    imgSrc: postPhoto3,
+    likes: 333,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum ut repellat dolorem quam suscipit facere incidunt neque distinctio voluptas voluptatibus numquam veritatis, nihil repellendus, quis accusamus eum, sequi fugit nulla nisi? Provident dignissimos unde corporis tempora accusantium nesciunt, explicabo architecto illo ullam minus quibusdam nobis dolor at delectus laborum eum. Culpa obcaecati autem dolorum voluptatibus, fuga quaerat? Autem inventore earum minima nesciunt quis, asperiores suscipit deleniti perferendis ab totam explicabo cupiditate ipsum blanditiis magnam, voluptatibus molestiae? Optio, eligendi obcaecati totam nobis fuga provident porro quaerat placeat qui esse corporis minus quibusdam doloremque dolore maxime odit in inventore pariatur voluptatibus.'
+  }
+];
 
 export const HomePage: FC = () => {
   return (
@@ -141,6 +162,7 @@ export const HomePage: FC = () => {
       <OurServices />
       <SaleCarsCarousel items={carItems} />
       <FeedbackCarousel feedbacks={userItems} />
+      <InstagramPosts items={instagramItems} />
     </div>
   );
 };

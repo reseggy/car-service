@@ -1,0 +1,145 @@
+.post {
+  max-width: 457px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(37, 36, 36, 0.8);
+}
+
+.postHeader {
+  min-width: 100%;
+  min-height: 53.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  position: relative;
+  width: 38.49px;
+  height: 38.49px;
+}
+
+.storyRing {
+  position: absolute;
+  top: -3.04px; /* вычесть из размера кольца размер аватарки и поделить на 2 */
+  left: -3.04px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.headerPhoto {
+  position: relative;
+  z-index: 2;
+  width: 32.41px;
+  height: 32.41px;
+  border-radius: 106.92px;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.headerUsername {
+  color: var(--primary-color);
+  font-family: var(--font-family-additional-medium);
+  font-size: 12.83px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.headerText {
+  color: var(--primary-color);
+  font-family: var(--font-family-additional-regular);
+  font-size: 11.76px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.32px;
+}
+
+.mainPhoto {
+  width: 417px;
+  height: 417px;
+  object-fit: cover;
+}
+
+.icons {
+  margin: 10px 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconsGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.iconLike {
+  height: 27px;
+  width: 27px;
+}
+
+.iconComment {
+  height: 27px;
+  width: 27px;
+}
+
+.iconShare {
+  height: 27px;
+  width: 27px;
+}
+
+.iconMarker {
+  height: 27px;
+  width: 27px;
+}
+
+.postFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 100%;
+}
+
+.footerLikes {
+  color: var(--primary-color);
+  font-family: var(--font-family-additional-medium);
+  font-size: 14.97px;
+  font-weight: 700;
+}
+
+.footerText {
+  font-family: var(--font-family-additional-regular);
+  font-size: 14.97px;
+  font-weight: 400;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Ограничение до 2 строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footerUsername {
+  font-weight: bold;
+}

@@ -1,3 +1,5 @@
+@import url('./assets/fonts//fonts.css');
+
 html,
 body,
 div,
@@ -133,6 +135,9 @@ table {
   --primary-color: rgb(252, 252, 252);
   --background: rgb(26, 25, 25);
   --font-family: 'Inter', sans-serif;
+  --font-family-additional-regular: 'SFPRORegular', sans-serif;
+  --font-family-additional-medium: 'SFPROMedium', sans-serif;
+  --font-family-additional-bold: 'SFPROBold', sans-serif;
 }
 ::-webkit-scrollbar {
   width: 6px;
