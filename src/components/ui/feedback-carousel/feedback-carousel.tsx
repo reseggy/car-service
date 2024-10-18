@@ -1,13 +1,13 @@
 import { FC } from 'react';
-import { TSaleCarsCarouselProps } from './types';
+import { TFeedbackCarouselProps } from './types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { CarForSale } from '../../car-for-sale';
-import styles from './sale-cars-carousel.module.css';
+import styles from './feedback-carousel.module.css';
+import { Feedback } from '../../feedback';
 
-export const SaleCarsCarouselUI: FC<TSaleCarsCarouselProps> = ({
-  items,
+export const FeedbackCarouselUI: FC<TFeedbackCarouselProps> = ({
+  feedbacks,
   settingsAdditional
 }) => {
   const settings = {
@@ -21,15 +21,19 @@ export const SaleCarsCarouselUI: FC<TSaleCarsCarouselProps> = ({
   };
 
   return (
-    <section className={styles.saleCarsSection}>
+    <section className={styles.feedbackSection}>
       <div className={styles.sectionTitle}>
-        <h2 className={styles.title}>Sale Cars</h2>
-        <p className={styles.text}>200 offers</p>
+        <h2 className={styles.title}>Testimonial</h2>
+        <p className={styles.text}>
+          Our customers’ feedback is the best recommendation! Find out why they
+          choose us to service their vehicles. Professionalism, quality and
+          taking care of your vehicle is our priority.
+        </p>
       </div>
       <Slider {...settings} className={styles.carouselContainer}>
-        {items.map((item, index) => (
+        {feedbacks.map((item, index) => (
           <div key={index} className={styles.carouselItem}>
-            <CarForSale {...item} />
+            <Feedback {...item} />
           </div>
         ))}
       </Slider>
