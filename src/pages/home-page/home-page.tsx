@@ -140,7 +140,6 @@ export const HomePage: FC = () => {
       <AboutUs />
       <OurServices />
       <SaleCarsCarousel items={carItems} />
-
       <FeedbackCarousel feedbacks={userItems} />
     </div>
   );
