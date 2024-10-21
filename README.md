@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# 33AutoPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+33AutoPulse - это веб-приложение для продажи автомобилей, разработанное с использованием React, TypeScript и Vite. Выполняю его в качестве pet-проекта.
 
-Currently, two official plugins are available:
+## Установка
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Для начала работы с проектом выполните следующие шаги:
 
-## Expanding the ESLint configuration
+1. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/reseggy/car-service
+   ```
+2. Перейдите в директорию проекта:
+   ```
+   cd car-service
+   ```
+3. Установите зависимости:
+   ```
+   npm install
+   ```
+4. Запуск проекта:
+   ```
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Скрипты(на данный момент)
 
-- Configure the top-level `parserOptions` property like this:
+В проекте доступны следующие скрипты:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-});
-```
+- `npm run dev` - Запускает проект в режиме разработки.
+- `npm run build` - Собирает проект для продакшена.
+- `npm run lint` - Запускает линтер для проверки кода.
+- `npm run preview` - Запускает предварительный просмотр собранного проекта.
+- `npm run format` - Форматирует код с помощью Prettier.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Используемые технологии(на данный момент)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules
-  }
-});
-```
+- **React** - библиотека для создания пользовательских интерфейсов.
+- **TypeScript** - язык программирования, расширяющий возможности JavaScript.
+- **Vite** - инструмент для сборки и разработки фронтенд-приложений.
+- **ESLint** - инструмент для анализа кода и поиска проблем.
+- **Prettier** - инструмент для форматирования кода.
