@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import styles from './footer.module.css';
-import phoneIcon from '../../../assets/phone.svg';
-import adressIcon from '../../../assets/address.svg';
-import facebookIcon from '../../../assets/facebook.svg';
-import XIcon from '../../../assets/xIcon.svg';
+import phoneIcon from '../../../assets/svg/phone.svg';
+import adressIcon from '../../../assets/svg/address.svg';
+import facebookIcon from '../../../assets/svg/facebook.svg';
+import XIcon from '../../../assets/svg/xIcon.svg';
 import { TFooterProps } from './types';
 
 export const FooterUI: FC<TFooterProps> = ({

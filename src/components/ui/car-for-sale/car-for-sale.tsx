@@ -1,7 +1,7 @@
 import { TCarForSaleProps } from './types';
 import { FC } from 'react';
 import styles from './car-for-sale.module.css';
-import separator from '../../../assets/separator.svg';
+import separator from '../../../assets/svg/separator.svg';
 
 export const CarForSaleUI: FC<TCarForSaleProps> = ({
   title,

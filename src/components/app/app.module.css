@@ -5,11 +5,12 @@
   width: 100%;
   background-color: var(--background);
   color: var(--primary-color);
-  background-image: url('../../assets//background-line.svg'),
-    url('../../assets//background-line2.svg'), url('../../assets//effect.svg');
+  background-image: url('../../assets/svg/background-line.svg'),
+    url('../../assets/svg/background-line2.svg'),
+    url('../../assets/svg/background-line3.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position:
     -93px -187px,
     0px 1222px,
-    1000px 100px;
+    -754px 2164px;
 }

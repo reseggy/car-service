@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import styles from './our-services.module.css';
 import { ServiceListElement } from '../../service-list-element';
-import serviceBrake from '../../../assets/serviceBrake.png';
-import serviceEngine from '../../../assets/serviceEngine.png';
-import serviceOil from '../../../assets/serviceOil.png';
-import serviceWheel from '../../../assets/serviceWheel.png';
+import serviceBrake from '../../../assets/photos/serviceBrake.png';
+import serviceEngine from '../../../assets/photos/serviceEngine.png';
+import serviceOil from '../../../assets/photos/serviceOil.png';
+import serviceWheel from '../../../assets/photos/serviceWheel.png';
 
 export const OurServicesUI: FC = () => {
   return (

@@ -1,7 +1,7 @@
 import styles from './welcome-component.module.css';
 import { FC } from 'react';
-import logo from '../../../assets/logoWOtext.svg';
-import arrow from '../../../assets/arrow2.svg';
+import logo from '../../../assets/svg/logoWOtext.svg';
+import arrow from '../../../assets/svg/arrow2.svg';
 
 export const WelcomeComponentUI: FC = () => {
   return (

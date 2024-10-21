@@ -58,7 +58,7 @@
 }
 
 .dot {
-  background-color: #302f2f;
+  background-color: rgb(48, 47, 47);
   min-width: 15px;
   max-width: 30px;
   width: 15px;
@@ -79,6 +79,6 @@
 
 .dotsList :global(li.slick-active) .dot {
   /* global is added to access the class to change the styles of the active dot */
-  background-color: #dd293f;
+  background-color: var(--additional-color);
   width: 30px;
 }

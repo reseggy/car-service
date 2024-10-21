@@ -5,9 +5,12 @@
   min-height: 953px;
   padding-top: 186px;
   padding-left: 252px;
-  background-image: url('../../../assets/car.png');
+  background-image: url('../../../assets/photos/car.png'),
+    url('../../../assets/svg/effect.svg');
   background-repeat: no-repeat;
-  background-position: 777px 110px;
+  background-position:
+    777px 110px,
+    975px 50px;
 }
 
 .text {

@@ -4,12 +4,15 @@ import { AboutUs } from '../../components/about-us';
 import styles from './home-page.module.css';
 import { OurServices } from '../../components/our-services';
 import { SaleCarsCarousel } from '../../components/sale-cars-carousel';
-import carSaleGls from '../../assets/carSaleGls.png';
-import carSaleGls2 from '../../assets/carSaleGls2.png';
-import carSaleGls3 from '../../assets/carSaleGls3.png';
-import carSaleGls4 from '../../assets/carSaleGls4.png';
+import carSaleGls from '../../assets/photos/carSaleGls.png';
+import carSaleGls2 from '../../assets/photos/carSaleGls2.png';
+import carSaleGls3 from '../../assets/photos/carSaleGls3.png';
+import carSaleGls4 from '../../assets/photos/carSaleGls4.png';
 import { FeedbackCarousel } from '../../components/feedback-carousel';
 import { InstagramPosts } from '../../components/instagram-posts';
+import postPhoto1 from '../../assets/photos/post1.jpg';
+import postPhoto2 from '../../assets/photos/post2.png';
+import postPhoto3 from '../../assets/photos/post3.jpg';
 
 const carItems = [
   {
@@ -133,9 +136,7 @@ const userItems = [
     imgSrc: 'https://i.pravatar.cc/304'
   }
 ];
-import postPhoto1 from '../../assets/post1.jpg';
-import postPhoto2 from '../../assets/post2.png';
-import postPhoto3 from '../../assets/post3.jpg';
+
 const instagramItems = [
   {
     imgSrc: postPhoto1,
