@@ -4,23 +4,12 @@ import phoneIcon from '../../../assets/phone.svg';
 import adressIcon from '../../../assets/address.svg';
 import facebookIcon from '../../../assets/facebook.svg';
 import XIcon from '../../../assets/xIcon.svg';
+import { TFooterProps } from './types';
 
-export const FooterUI: FC = () => {
-  const postFooterLinks = {
-    'Privacy policy': '#',
-    'Legal notice': '#',
-    Cookie: '#',
-    Sitemap: '#'
-  };
-
-  const servicesLinks = {
-    'Bodywork parts': '#',
-    'Stk and transcription of vehicles': '#',
-    Ceramics: '#',
-    'Vehicle washing and interior cleaning': '#',
-    '3D Geometry': '#'
-  };
-
+export const FooterUI: FC<TFooterProps> = ({
+  postFooterLinks,
+  servicesLinks
+}) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.mainFooter}>
