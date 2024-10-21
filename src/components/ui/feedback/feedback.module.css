@@ -25,6 +25,14 @@
   width: 75px;
   height: 75px;
   border-radius: 15px;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    scale 0.5s ease-in-out;
+}
+
+.feedbackContainer:hover .personImg {
+  scale: 1.1;
+  box-shadow: 0px 0px 100px 0px var(--additional-color);
 }
 
 .personName {

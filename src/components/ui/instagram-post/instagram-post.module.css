@@ -11,6 +11,10 @@
   background-color: var(--elements-background);
 }
 
+.post:hover .mainPhoto {
+  box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.5);
+}
+
 .postHeader {
   min-width: 100%;
   min-height: 53.5px;
@@ -78,6 +82,7 @@
   width: 417px;
   height: 417px;
   object-fit: cover;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .icons {
@@ -94,22 +99,7 @@
   gap: 13px;
 }
 
-.iconLike {
-  height: 27px;
-  width: 27px;
-}
-
-.iconComment {
-  height: 27px;
-  width: 27px;
-}
-
-.iconShare {
-  height: 27px;
-  width: 27px;
-}
-
-.iconMarker {
+.icon {
   height: 27px;
   width: 27px;
 }

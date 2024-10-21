@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: row;
   gap: 293px;
-  margin: 0 auto;
-  max-height: 127px;
+  justify-content: center;
   min-height: 127px;
 }
 

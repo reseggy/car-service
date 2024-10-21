@@ -12,7 +12,7 @@ export const CarForSaleUI: FC<TCarForSaleProps> = ({
 }) => {
   return (
     <div className={styles.item}>
-      {/* РЕАЛИЗОВАТЬ ПРИ КЛИКЕ НА КНОПКУ ОТКРЫТИЕ ОПРЕДЕЛЕННОЙ СТРАНИЦЫ
+      {/* TODO РЕАЛИЗОВАТЬ ПРИ КЛИКЕ НА КНОПКУ ОТКРЫТИЕ ОПРЕДЕЛЕННОЙ СТРАНИЦЫ
       ОПРЕДЕЛЕННОЙ ТАЧКИ */}
       <button className={styles.button}>
         <img src={imgSrc} alt={imgAlt} className={styles.itemImg} />

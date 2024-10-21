@@ -17,10 +17,17 @@
   backdrop-filter: blur(20px);
 }
 
+.button:hover .image {
+  scale: 1.05;
+  box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.25);
+}
 .image {
   width: 549px;
   height: 120px;
   border-radius: 15px;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    scale 0.5s ease-in-out;
 }
 
 .itemText {

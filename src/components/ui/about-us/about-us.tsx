@@ -3,20 +3,21 @@ import { FC } from 'react';
 import { Advantage } from '../../advantage';
 import styles from './about-us.module.css';
 import aboutUsCar from '../../../assets/aboutUsCar.png';
-import advantageProfService from '../../../assets/advantageProfService.svg';
-import advantageFastRepairs from '../../../assets/advantageFastRepairs.svg';
-import advantageQuality from '../../../assets/advantageQuality.svg';
-import advantageApproach from '../../../assets/advantageApproach.svg';
+
+import gearIcon from '../../../assets/svg/gear.svg';
+import engineIcon from '../../../assets/svg/engine.svg';
+import wrenchIcon from '../../../assets/svg/wrench.svg';
+import handshakeIcon from '../../../assets/svg/handshake.svg';
 
 export const AboutUsUI: FC<TAboutUsProps> = () => {
   return (
     <section className={styles.section}>
       <div className={styles.mainSection}>
         <div className={styles.titleSection}>
-          <h2 className={styles.title}>About Us</h2>
+          <h2 className={`${styles.text} ${styles.title}`}>About Us</h2>
           <img src={aboutUsCar} alt='car' className={styles.carImg} />
         </div>
-        <p className={styles.mainSectionText}>
+        <p className={`${styles.text} ${styles.mainSectionText}`}>
           We are your reliable partner in car maintenance in the Czech Republic.
           We specialize in quality maintenance, repair and replacement of spare
           parts for all makes and models. Our experienced craftsmen will provide
@@ -29,25 +30,25 @@ export const AboutUsUI: FC<TAboutUsProps> = () => {
         <Advantage
           title='Professional services'
           text='Our experienced craftsmen provide high quality service to your vehicle, solving any problems.'
-          imgSrc={advantageProfService}
+          imgSrc={gearIcon}
           imgAlt='icon professional services'
         />
         <Advantage
           title='Fast repairs'
           text="We value your time and offer prompt solutions to your vehicle's problems, minimizing downtime."
-          imgSrc={advantageFastRepairs}
+          imgSrc={engineIcon}
           imgAlt='icon fast repairs'
         />
         <Advantage
           title='Guaranteed quality'
           text='We use only top-quality parts and materials, ensuring long-term reliability of your vehicle.'
-          imgSrc={advantageQuality}
+          imgSrc={wrenchIcon}
           imgAlt='icon guaranteed quality'
         />
         <Advantage
           title='Customer-oriented approach'
           text='We strive for complete customer satisfaction by providing personalized service and support.'
-          imgSrc={advantageApproach}
+          imgSrc={handshakeIcon}
           imgAlt='icon customer-oriented approach'
         />
       </div>

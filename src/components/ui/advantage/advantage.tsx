@@ -9,10 +9,12 @@ export const AdvantageUI: FC<IAdvantageProps> = ({
   imgAlt
 }) => {
   return (
-    <div className={styles.advantages}>
-      <img src={imgSrc} alt={imgAlt} className={styles.advantagesIcon} />
-      <div className={styles.advantagesText}>
-        <h3 className={styles.advantagesTitle}>{title}</h3>
+    <div className={styles.advantage}>
+      <div className={styles.advantageIcon}>
+        <img src={imgSrc} alt={imgAlt} className={styles.advantageImg} />
+      </div>
+      <div className={styles.advantageText}>
+        <h3 className={styles.advantageTitle}>{title}</h3>
         <p className={styles.subsectionText}>{text}</p>
       </div>
     </div>

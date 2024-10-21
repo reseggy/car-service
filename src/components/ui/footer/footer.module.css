@@ -90,6 +90,21 @@
   font-weight: 600;
 }
 
+.contactBigButton:hover,
+.contactSmallButton:hover {
+  background: var(--additional-color-hover);
+}
+
+.contactBigButton:active,
+.contactSmallButton:active {
+  background: var(--additional-color-active);
+}
+
+.contactBigButton:disabled,
+.contactSmallButton:disabled {
+  background: var(--additional-color-disavled);
+}
+
 .table,
 .serviceOffers {
   display: flex;
