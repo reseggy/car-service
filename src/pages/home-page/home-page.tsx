@@ -154,6 +154,8 @@ const instagramItems = [
   }
 ];
 
+import { Footer } from '../../components/footer';
+
 export const HomePage: FC = () => {
   return (
     <div className={styles.page}>
@@ -163,6 +165,7 @@ export const HomePage: FC = () => {
       <SaleCarsCarousel items={carItems} />
       <FeedbackCarousel feedbacks={userItems} />
       <InstagramPosts items={instagramItems} />
+      <Footer />
     </div>
   );
 };
