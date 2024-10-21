@@ -135,6 +135,9 @@ table {
   --primary-color: rgb(252, 252, 252);
   --background: rgb(26, 25, 25);
   --additional-color: rgb(221, 41, 63);
+  --additional-color-hover: rgb(227, 79, 96);
+  --additional-color-active: rgb(176, 28, 45);
+  --additional-color-disabled: rgb(103, 32, 40);
   --elements-border: rgb(55, 55, 55);
   --elements-background: rgba(37, 36, 36, 0.8);
   --font-family: 'Inter', sans-serif;
