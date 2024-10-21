@@ -15,7 +15,7 @@
 }
 
 .headerTitle {
-  color: rgb(221, 41, 63);
+  color: var(--additional-color);
   font-family: var(--font-family);
   font-size: 70px;
   font-weight: 700;

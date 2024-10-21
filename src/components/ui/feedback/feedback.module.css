@@ -7,10 +7,10 @@
   max-width: 269px;
   max-height: 333px;
   gap: 20px;
-  border: 1px solid rgb(55, 55, 55);
+  border: 1px solid var(--elements-border);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  background-color: rgba(37, 36, 36, 0.8);
+  background-color: var(--elements-background);
 }
 
 .person {

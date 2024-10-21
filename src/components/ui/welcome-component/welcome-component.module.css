@@ -1,7 +1,7 @@
 .home_page {
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
+  min-width: 100%;
   min-height: 953px;
   padding-top: 186px;
   padding-left: 252px;
@@ -29,7 +29,7 @@
 }
 
 .title_main_word {
-  color: rgb(221, 41, 63);
+  color: var(--additional-color);
 }
 
 .logo {
@@ -65,7 +65,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
-  background: rgb(221, 41, 63);
+  background: var(--additional-color);
   border-radius: 50px;
   border: none;
   cursor: pointer;

@@ -1,5 +1,5 @@
 .item {
-  min-width: 1417px;
+  min-width: 100%;
 }
 
 .button {
@@ -9,9 +9,9 @@
   gap: 50px;
   align-items: center;
   max-height: 160px;
-  border: 1px solid rgb(55, 55, 55);
+  border: 1px solid var(--elements-border);
   border-radius: 20px;
-  background-color: rgba(37, 36, 36, 0.8);
+  background-color: var(--elements-background);
   padding: 20px;
   cursor: pointer;
   backdrop-filter: blur(20px);
@@ -31,7 +31,7 @@
 }
 
 .title {
-  color: rgb(221, 41, 63);
+  color: var(--additional-color);
   font-family: var(--font-family);
   font-size: 26px;
   font-weight: 700;

@@ -135,6 +135,8 @@ table {
   --primary-color: rgb(252, 252, 252);
   --background: rgb(26, 25, 25);
   --additional-color: rgb(221, 41, 63);
+  --elements-border: rgb(55, 55, 55);
+  --elements-background: rgba(37, 36, 36, 0.8);
   --font-family: 'Inter', sans-serif;
   --font-family-additional-regular: 'SFPRORegular', sans-serif;
   --font-family-additional-medium: 'SFPROMedium', sans-serif;

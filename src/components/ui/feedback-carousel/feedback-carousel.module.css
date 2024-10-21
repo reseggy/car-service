@@ -14,7 +14,7 @@
 }
 
 .title {
-  color: rgb(221, 41, 63);
+  color: var(--additional-color);
   font-family: var(--font-family);
   font-size: 70px;
   font-weight: 700;
@@ -33,7 +33,7 @@
 
 .carouselContainer {
   width: 100%;
-  margin-bottom: 25px; /* 25px is the height of the dots */
+  margin-bottom: 25px;
 }
 
 .dotsList {
@@ -59,7 +59,7 @@
 }
 
 .dot {
-  background-color: #302f2f;
+  background-color: rgb(48, 47, 47);
   min-width: 15px;
   max-width: 30px;
   width: 15px;
@@ -80,6 +80,6 @@
 
 .dotsList :global(li.slick-active) .dot {
   /* global is added to access the class to change the styles of the active dot */
-  background-color: #dd293f;
+  background-color: var(--additional-color);
   width: 30px;
 }
