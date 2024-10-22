@@ -5,11 +5,14 @@ import adressIcon from '@assets/svg/address.svg';
 import facebookIcon from '@assets/svg/facebook.svg';
 import XIcon from '@assets/svg/xIcon.svg';
 import { TFooterProps } from './types';
+import { useNavigate } from 'react-router-dom';
 
 export const FooterUI: FC<TFooterProps> = ({
   postFooterLinks,
   servicesLinks
 }) => {
+  const navigate = useNavigate();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.mainFooter}>
@@ -43,12 +46,18 @@ export const FooterUI: FC<TFooterProps> = ({
               <button
                 key={index}
                 className={`${styles.contactButton} ${styles.contactSmallButton}`}
+                onClick={() => {
+                  window.open('https://rkn.gov.ru/', '_blank');
+                }}
               >
                 <img src={icon} alt='icon' />
               </button>
             ))}
             <button
               className={`${styles.contactButton} ${styles.footerText} ${styles.contactBigButton}`}
+              onClick={() => {
+                navigate('/contacts');
+              }}
             >
               Contact us
             </button>

@@ -1,12 +1,14 @@
 import { FC } from 'react';
 import styles from './app-header.module.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '@assets/svg/logo.svg';
 import phoneIcon from '@assets/svg/phone.svg';
 import arrowIcon from '@assets/svg/arrow.svg';
 import { TAppHeaderUIProps } from './types';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {
+  const navigate = useNavigate();
+
   function getClassName(isActive: boolean) {
     return isActive
       ? `${styles.headerText} ${styles.navLink} ${styles.navLinkActive}`
@@ -70,6 +72,9 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {
         <button
           aria-label='Contact us'
           className={`${styles.headerText} ${styles.button} ${styles.contactButton}`}
+          onClick={() => {
+            navigate('/contacts');
+          }}
         >
           Contact us
         </button>

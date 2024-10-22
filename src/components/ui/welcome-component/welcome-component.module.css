@@ -1,9 +1,9 @@
 .home_page {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  min-width: 1914px;
   min-height: 953px;
-  padding-top: 186px;
+  padding-top: 106px;
   padding-left: 252px;
   background-image: url('../../../assets/photos/car.png'),
     url('../../../assets/svg/effect.svg');
