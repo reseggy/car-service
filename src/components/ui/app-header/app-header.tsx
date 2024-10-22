@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import styles from './app-header.module.css';
 import { NavLink } from 'react-router-dom';
-import logo from '../../../assets/svg/logo.svg';
-import phoneIcon from '../../../assets/svg/phone.svg';
-import arrowIcon from '../../../assets/svg/arrow.svg';
+import logo from '@assets/svg/logo.svg';
+import phoneIcon from '@assets/svg/phone.svg';
+import arrowIcon from '@assets/svg/arrow.svg';
 import { TAppHeaderUIProps } from './types';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {

@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { TInstagramPosts } from './types';
 import styles from './instagram-posts.module.css';
 import { InstagramPost } from '../../instagram-post';
-import instagramCar from '../../../assets/photos/instagramCar.png';
+import instagramCar from '@assets/photos/instagramCar.png';
 
 export const InstagramPostsUI: FC<TInstagramPosts> = ({ items }) => {
   return (

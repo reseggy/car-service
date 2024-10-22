@@ -2,12 +2,11 @@ import { TAboutUsProps } from './types';
 import { FC } from 'react';
 import { Advantage } from '../../advantage';
 import styles from './about-us.module.css';
-import aboutUsCar from '../../../assets/photos/aboutUsCar.png';
-
-import gearIcon from '../../../assets/svg/gear.svg';
-import engineIcon from '../../../assets/svg/engine.svg';
-import wrenchIcon from '../../../assets/svg/wrench.svg';
-import handshakeIcon from '../../../assets/svg/handshake.svg';
+import aboutUsCar from '@assets/photos/aboutUsCar.png';
+import gearIcon from '@assets/svg/gear.svg';
+import engineIcon from '@assets/svg/engine.svg';
+import wrenchIcon from '@assets/svg/wrench.svg';
+import handshakeIcon from '@assets/svg/handshake.svg';
 
 export const AboutUsUI: FC<TAboutUsProps> = () => {
   return (

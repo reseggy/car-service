@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import { TInstagramPostProps } from './types';
 import styles from './instagram-post.module.css';
-import instagramAvatar from '../../../assets/photos/instagramAvatar.png';
-import iconMore from '../../../assets/svg/iconMore.svg';
-import iconLike from '../../../assets/svg/iconLike.svg';
-import iconComment from '../../../assets/svg/iconComment.svg';
-import iconShare from '../../../assets/svg/iconShare.svg';
-import iconMarker from '../../../assets/svg/iconMarker.svg';
-import storyRing from '../../../assets/svg/storyRing.svg';
+import instagramAvatar from '@assets/photos/instagramAvatar.png';
+import iconMore from '@assets/svg/iconMore.svg';
+import iconLike from '@assets/svg/iconLike.svg';
+import iconComment from '@assets/svg/iconComment.svg';
+import iconShare from '@assets/svg/iconShare.svg';
+import iconMarker from '@assets/svg/iconMarker.svg';
+import storyRing from '@assets/svg/storyRing.svg';
 
 export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
   //TODO Сделать кнопкой, добавить hover и переправку в запретграмм
