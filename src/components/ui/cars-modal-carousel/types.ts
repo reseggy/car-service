@@ -9,7 +9,7 @@ interface TSettingsAdditional {
   arrows: boolean;
 }
 
-export interface TSaleCarsCarouselProps {
-  items: TCar[];
+export interface TCarsModalCarouselProps {
+  car: TCar;
   settingsAdditional: TSettingsAdditional;
 }

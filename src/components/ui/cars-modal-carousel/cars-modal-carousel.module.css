@@ -1,0 +1,99 @@
+.carousel {
+  min-width: 691px;
+  max-width: 691px;
+}
+
+.button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
+
+:global(div.slick-list) {
+  max-height: 387px;
+}
+
+.mainImg {
+  width: 100%;
+  height: 387px;
+  object-fit: cover;
+  border-radius: 15px;
+  position: relative;
+  border: none;
+}
+
+.dotsContainer {
+  display: flex !important; /* переопределяю класс из библиотеки */
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.dots li {
+  display: inline-block;
+}
+
+.dotsContainer :global(.slick-active) .dotImage {
+  box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.25);
+}
+
+.dotLink {
+  min-width: 100%;
+}
+
+.dotImage {
+  width: 162px;
+  height: 88px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(221, 41, 63, 0.5);
+  max-width: 42px;
+  max-height: 42px;
+  position: absolute;
+  z-index: 1;
+  top: 194px;
+}
+
+.arrowContainer:hover {
+  background-color: rgba(227, 79, 96, 0.5);
+}
+
+.arrowContainer:active {
+  background-color: rgba(176, 28, 45, 0.5);
+}
+
+.arrowContainerDisabled {
+  background-color: rgba(176, 28, 45, 0.5);
+  opacity: 0.2;
+}
+
+.prevArrowContainer {
+  left: 10px;
+}
+
+.nextArrowContainer {
+  right: 10px;
+}
+
+.arrowIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.arrowIconNext {
+  transform: rotate(180deg);
+}

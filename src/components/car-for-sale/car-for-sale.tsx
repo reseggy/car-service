@@ -1,21 +1,7 @@
 import { FC } from 'react';
-import { TCarForSaleProps } from './types.ts';
+import { TCar } from '../../types/types';
 import { CarForSaleUI } from '../ui/car-for-sale';
 
-export const CarForSale: FC<TCarForSaleProps> = ({
-  title,
-  price,
-  mileage,
-  imgSrc,
-  imgAlt
-}) => {
-  return (
-    <CarForSaleUI
-      title={title}
-      price={price}
-      mileage={mileage}
-      imgSrc={imgSrc}
-      imgAlt={imgAlt}
-    />
-  );
+export const CarForSale: FC<TCar> = (car) => {
+  return <CarForSaleUI car={car} />;
 };

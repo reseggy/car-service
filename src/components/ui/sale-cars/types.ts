@@ -1,11 +1,5 @@
-interface TSaleCar {
-  title: string;
-  price: string;
-  mileage: string;
-  imgSrc: string;
-  imgAlt: string;
-}
+import { TCar } from '../../../types/types';
 
 export interface TSaleCarsProps {
-  items: TSaleCar[];
+  items: TCar[];
 }

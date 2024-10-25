@@ -1,7 +1,5 @@
+import { TCar } from '../../../types/types';
+
 export interface TCarForSaleProps {
-  title: string;
-  price: string;
-  mileage: string;
-  imgSrc: string;
-  imgAlt: string;
+  car: TCar;
 }

@@ -16,8 +16,8 @@ export const InstagramPostsUI: FC<TInstagramPosts> = ({ items }) => {
         />
       </div>
       <div className={styles.posts}>
-        {items.map((item) => (
-          <InstagramPost item={item} />
+        {items.map((item, index) => (
+          <InstagramPost key={index} item={item} />
         ))}
       </div>
     </div>

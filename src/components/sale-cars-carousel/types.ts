@@ -1,10 +1,4 @@
-export interface TCar {
-  title: string;
-  price: string;
-  mileage: string;
-  imgSrc: string;
-  imgAlt: string;
-} //TODO вынести TCar в отдельный файл
+import { TCar } from '../../types/types';
 
 export interface TSaleCarsCarouselProps {
   items: TCar[];

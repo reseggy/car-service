@@ -15,7 +15,8 @@ export default defineConfig({
     alias: {
       '@': resolve(root, ''),
       '@assets': resolve(root, 'assets'),
-      '@components': resolve(root, 'components')
+      '@components': resolve(root, 'components'),
+      '@types': resolve(root, 'types')
     }
   }
 });

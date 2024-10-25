@@ -8,19 +8,12 @@ export const SaleCarsUI: FC<TSaleCarsProps> = ({ items }) => {
     <section className={styles.section}>
       <div className={styles.textSection}>
         <h2 className={styles.title}>Sale Cars</h2>
-        <p className={styles.text}>200 offers</p>
+        <p className={styles.text}>{items.length} offers</p>
       </div>
       <div className={styles.listCars}>
-        {items.map((item, index) => (
-          <div className={styles.listCar}>
-            <CarForSale
-              key={index}
-              title={item.title}
-              price={item.price}
-              mileage={item.mileage}
-              imgSrc={item.imgSrc}
-              imgAlt={item.imgAlt}
-            />
+        {items.map((car, index) => (
+          <div key={index} className={styles.listCar}>
+            <CarForSale {...car} />
           </div>
         ))}
       </div>
