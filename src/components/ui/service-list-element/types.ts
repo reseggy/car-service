@@ -3,4 +3,6 @@ export interface TServiceListElementProps {
   text: string;
   imgSrc: string;
   imgAlt: string;
+  target: string;
+  onClick: () => void;
 }

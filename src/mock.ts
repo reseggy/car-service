@@ -18,7 +18,17 @@ import photoLX_2 from '@assets/photos/cars/lx_2.webp';
 import photoLX_3 from '@assets/photos/cars/lx_3.webp';
 import photoLX_4 from '@assets/photos/cars/lx_4.webp';
 
+import postPhoto1 from '@assets/photos/post1.jpg';
+import postPhoto2 from '@assets/photos/post2.png';
+import postPhoto3 from '@assets/photos/post3.jpg';
+
+import serviceBrake from '@assets/photos/serviceBrake.png';
+import serviceEngine from '@assets/photos/serviceEngine.png';
+import serviceOil from '@assets/photos/serviceOil.png';
+import serviceWheel from '@assets/photos/serviceWheel.png';
+
 import { TCar } from './types/types';
+import { TServiceListElement } from './types/types';
 
 export const carItems: TCar[] = [
   {
@@ -163,7 +173,7 @@ export const carItems: TCar[] = [
     imgSrc3: photoLX_3,
     imgSrc4: photoLX_4,
     imgAlt: 'Lexus LX 2021',
-    model: 'RX 350',
+    model: 'LX 570',
     year: '2021',
     exteriorColor: 'Red',
     interiorColor: 'Black',
@@ -172,5 +182,218 @@ export const carItems: TCar[] = [
     transmission: 'Automatic',
     engine: '3.5L V6',
     id: '8'
+  }
+];
+
+export const userItems = [
+  {
+    name: 'Peter Parker',
+    review:
+      'Reliable and honest craftsmen! I can always trust them completely with my vehicle. They do everything they can to keep my vehicle running flawlessly.',
+    imgSrc: 'https://i.pravatar.cc/300'
+  },
+  {
+    name: 'Alina',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/301'
+  },
+  {
+    name: 'Elisa',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/302'
+  },
+  {
+    name: 'Jeremy',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/303'
+  },
+  {
+    name: 'Julia',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/304'
+  },
+  {
+    name: 'Peter Parker',
+    review:
+      'Reliable and honest craftsmen! I can always trust them completely with my vehicle. They do everything they can to keep my vehicle running flawlessly.',
+    imgSrc: 'https://i.pravatar.cc/300'
+  },
+  {
+    name: 'Alina',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/301'
+  },
+  {
+    name: 'Elisa',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/302'
+  },
+  {
+    name: 'Jeremy',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/303'
+  },
+  {
+    name: 'Julia',
+    review:
+      'Lorem ipsum dolor sit amet consectetur. Diam tortor scelerisque elit augue rhoncus semper porttitor donec id. Pellentesque gravida quis id nunc. Feugiat.',
+    imgSrc: 'https://i.pravatar.cc/304'
+  }
+];
+
+export const instagramItems = [
+  {
+    imgSrc: postPhoto1,
+    likes: 111,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...'
+  },
+  {
+    imgSrc: postPhoto2,
+    likes: 222,
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae non facilis in reprehenderit nam odio tenetur similique quis consequuntur excepturi deleniti, atque sed! Officiis dolores nihil quo sed deleniti.'
+  },
+  {
+    imgSrc: postPhoto3,
+    likes: 333,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum ut repellat dolorem quam suscipit facere incidunt neque distinctio voluptas voluptatibus numquam veritatis, nihil repellendus, quis accusamus eum, sequi fugit nulla nisi? Provident dignissimos unde corporis tempora accusantium nesciunt, explicabo architecto illo ullam minus quibusdam nobis dolor at delectus laborum eum. Culpa obcaecati autem dolorum voluptatibus, fuga quaerat? Autem inventore earum minima nesciunt quis, asperiores suscipit deleniti perferendis ab totam explicabo cupiditate ipsum blanditiis magnam, voluptatibus molestiae? Optio, eligendi obcaecati totam nobis fuga provident porro quaerat placeat qui esse corporis minus quibusdam doloremque dolore maxime odit in inventore pariatur voluptatibus.'
+  }
+];
+
+export const servicesElementsMain = [
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Engine repair',
+    text: 'We keep a close eye on the condition of your engine, offering services that will reduce the likelihood of future engine replacement.',
+    imgSrc: serviceEngine,
+    imgAlt: 'Engine repair'
+  },
+  {
+    title: 'Oil change',
+    text: 'Regular oil and filter changes are one of the most effective and affordable ways to protect your vehicle.',
+    imgSrc: serviceOil,
+    imgAlt: 'Oil change'
+  },
+  {
+    title: 'Wheel replacement',
+    text: 'We perform a wide range of wheel replacement services, including emergency tire replacement in the event of a breakdown on the road.',
+    imgSrc: serviceWheel,
+    imgAlt: 'Wheel replacement'
+  }
+];
+
+export const servicesElementsAdditional = [
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
+  },
+  {
+    title: 'Brake system repair',
+    text: 'From pedal adjustments to hydraulic fluid replacement, our experts can repair brakes of any make and model.',
+    imgSrc: serviceBrake,
+    imgAlt: 'brake system repair'
   }
 ];

@@ -1,27 +1,16 @@
 import { FC, useEffect, useRef } from 'react';
 import styles from './car-for-sale-modal.module.css';
-import { useNavigate } from 'react-router-dom';
 import { CarsModalCarousel } from '../../cars-modal-carousel';
 import { TCarForSaleModalProps } from './types';
 import { ModalOverlayUI } from '../modal-overlay';
 
 export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
   car,
-  onClose
+  onClose,
+  carInfo,
+  onClick
 }) => {
-  const carInfoTest = [
-    { title: 'Model:', value: car.model },
-    { title: 'Year:', value: car.year },
-    { title: 'Exterior color:', value: car.exteriorColor },
-    { title: 'Interior color:', value: car.interiorColor },
-    { title: 'Drivetrain:', value: car.drivetrain },
-    { title: 'Fuel type:', value: car.fuelType },
-    { title: 'Transmission:', value: car.transmission },
-    { title: 'Engine:', value: car.engine },
-    { title: 'Mileage:', value: car.mileage }
-  ];
-
-  const ref = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -29,28 +18,28 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
     };
 
     const handleClickOverlay = (e: MouseEvent) => {
-      if (e.target === ref.current) {
+      if (e.target === overlayRef.current) {
         onClose();
       }
     };
 
     document.addEventListener('keydown', handleEsc);
     document.addEventListener('click', handleClickOverlay);
+
     return () => {
       document.removeEventListener('keydown', handleEsc);
       document.removeEventListener('click', handleClickOverlay);
     };
   }, [onClose]);
-  const navigate = useNavigate();
 
   return (
     <>
-      <div className={styles.modal}>
+      <div className={`${styles.modal}`}>
         <div className={styles.carInfo}>
           <div className={styles.carMainInfo}>
             <h3 className={styles.carTitle}>{car.title}</h3>
             <div className={styles.carAdditionalInfo}>
-              {carInfoTest.map((info, index) => (
+              {carInfo.map((info, index) => (
                 <div key={index} className={styles.carInfoTextSection}>
                   <p className={`${styles.carText} ${styles.carInfoTitle}`}>
                     {info.title}
@@ -62,9 +51,7 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
           </div>
           <button
             className={`${styles.carText} ${styles.buttonContact}`}
-            onClick={() => {
-              navigate('/contacts');
-            }}
+            onClick={onClick}
           >
             Contact us
           </button>
@@ -73,7 +60,7 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
           <CarsModalCarousel car={car} />
         </div>
       </div>
-      <ModalOverlayUI onClose={onClose} ref={ref} />
+      <ModalOverlayUI onClose={onClose} ref={overlayRef} />
     </>
   );
 };

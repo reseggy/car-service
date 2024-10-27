@@ -10,7 +10,7 @@ import iconMarker from '@assets/svg/iconMarker.svg';
 import storyRing from '@assets/svg/storyRing.svg';
 
 export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
-  //TODO Сделать кнопкой, добавить hover и переправку в запретграмм
+  //TODO Сделать переправку в запретграмм
   return (
     <div className={styles.post}>
       <div className={styles.postHeader}>

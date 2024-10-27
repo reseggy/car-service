@@ -17,3 +17,10 @@ export interface TCar {
   engine: string;
   id: string;
 }
+
+export interface TServiceListElement {
+  title: string;
+  text: string;
+  imgSrc: string;
+  imgAlt: string;
+}

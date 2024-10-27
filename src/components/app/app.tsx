@@ -5,6 +5,7 @@ import { HomePage } from '../../pages/home-page';
 import { SaleCarsPage } from '../../pages/sale-cars-page';
 import { AppHeader } from '../app-header';
 import { Footer } from '../footer';
+import { OurServicesPage } from '../../pages/our-services-page';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/sale-cars' element={<SaleCarsPage />} />
+        <Route path='/services' element={<OurServicesPage />} />
       </Routes>
       <Footer />
     </div>

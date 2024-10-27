@@ -1,4 +1,4 @@
-import { TServiceListElement } from '../../../types/types';
+import { TServiceListElement } from '../../types/types';
 
 export interface TOurServicesProps {
   servicesElements: TServiceListElement[];
