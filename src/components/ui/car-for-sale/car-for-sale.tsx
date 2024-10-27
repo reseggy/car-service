@@ -1,4 +1,5 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import styles from './car-for-sale.module.css';
 import separator from '@assets/svg/separator.svg';
 import { CarForSaleModal } from '../../car-for-sale-modal';
@@ -9,12 +10,29 @@ export const CarForSaleUI: FC<TCarForSaleProps> = ({ car }) => {
 
   const onClick = () => {
     setIsModalOpen(true);
-    console.log(isModalOpen);
   };
 
   const onClose = () => {
     setIsModalOpen(false);
   };
+
+  useEffect(() => {
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    } else {
+      document.body.style.overflow = 'auto';
+      document.body.style.paddingRight = '0px';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+      document.body.style.paddingRight = '0px';
+    };
+  }, [isModalOpen]);
 
   return (
     <div className={styles.item} onClick={onClick}>
@@ -29,7 +47,11 @@ export const CarForSaleUI: FC<TCarForSaleProps> = ({ car }) => {
           </div>
         </div>
       </button>
-      {isModalOpen && <CarForSaleModal car={car} onClose={onClose} />}
+      {isModalOpen &&
+        createPortal(
+          <CarForSaleModal car={car} onClose={onClose} />,
+          document.body // Рендерим модалку в body
+        )}
     </div>
   );
 };

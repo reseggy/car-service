@@ -15,4 +15,5 @@ export interface TCar {
   fuelType: string;
   transmission: string;
   engine: string;
+  id: string;
 }

@@ -18,7 +18,9 @@ import photoLX_2 from '@assets/photos/cars/lx_2.webp';
 import photoLX_3 from '@assets/photos/cars/lx_3.webp';
 import photoLX_4 from '@assets/photos/cars/lx_4.webp';
 
-export const carItems = [
+import { TCar } from './types/types';
+
+export const carItems: TCar[] = [
   {
     title: 'Mercedes GLS-Class 2018',
     price: '45,000',
@@ -35,7 +37,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L V6'
+    engine: '3.0L V6',
+    id: '1'
   },
   {
     title: 'BMW X5 2019',
@@ -53,7 +56,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L I6'
+    engine: '3.0L I6',
+    id: '2'
   },
   {
     title: 'Audi Q7 2020',
@@ -71,7 +75,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L V6'
+    engine: '3.0L V6',
+    id: '3'
   },
   {
     title: 'Lexus LX 2021',
@@ -89,7 +94,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.5L V6'
+    engine: '3.5L V6',
+    id: '4'
   },
   {
     title: 'Mercedes GLS-Class 2018',
@@ -107,7 +113,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L V6'
+    engine: '3.0L V6',
+    id: '5'
   },
   {
     title: 'BMW X5 2019',
@@ -125,7 +132,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L I6'
+    engine: '3.0L I6',
+    id: '6'
   },
   {
     title: 'Audi Q7 2020',
@@ -143,7 +151,8 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.0L V6'
+    engine: '3.0L V6',
+    id: '7'
   },
   {
     title: 'Lexus LX 2021',
@@ -161,6 +170,7 @@ export const carItems = [
     drivetrain: 'AWD',
     fuelType: 'Gasoline',
     transmission: 'Automatic',
-    engine: '3.5L V6'
+    engine: '3.5L V6',
+    id: '8'
   }
 ];

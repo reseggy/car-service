@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import styles from './car-for-sale-modal.module.css';
 import { useNavigate } from 'react-router-dom';
 import { CarsModalCarousel } from '../../cars-modal-carousel';
@@ -21,14 +21,24 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
     { title: 'Mileage:', value: car.mileage }
   ];
 
+  const ref = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       e.key === 'Escape' && onClose();
     };
 
+    const handleClickOverlay = (e: MouseEvent) => {
+      if (e.target === ref.current) {
+        onClose();
+      }
+    };
+
     document.addEventListener('keydown', handleEsc);
+    document.addEventListener('click', handleClickOverlay);
     return () => {
       document.removeEventListener('keydown', handleEsc);
+      document.removeEventListener('click', handleClickOverlay);
     };
   }, [onClose]);
   const navigate = useNavigate();
@@ -63,7 +73,7 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
           <CarsModalCarousel car={car} />
         </div>
       </div>
-      <ModalOverlayUI onClose={onClose} />
+      <ModalOverlayUI onClose={onClose} ref={ref} />
     </>
   );
 };

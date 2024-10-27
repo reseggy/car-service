@@ -131,6 +131,10 @@ table {
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background);
+}
+
 :root {
   --primary-color: rgb(252, 252, 252);
   --background: rgb(26, 25, 25);

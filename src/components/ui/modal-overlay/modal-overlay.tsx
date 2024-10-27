@@ -1,5 +1,12 @@
+import { forwardRef } from 'react';
 import styles from './modal-overlay.module.css';
 
-export const ModalOverlayUI = ({ onClose }: { onClose: () => void }) => {
-  return <div className={styles.overlay} onClick={onClose} />;
-};
+interface ModalOverlayUIProps {
+  onClose: () => void;
+}
+
+export const ModalOverlayUI = forwardRef<HTMLDivElement, ModalOverlayUIProps>(
+  ({ onClose }, ref) => {
+    return <div ref={ref} className={styles.overlay} onClick={onClose}></div>;
+  }
+);
