@@ -3,8 +3,9 @@ import styles from './app-header.module.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '@assets/svg/logo.svg';
 import phoneIcon from '@assets/svg/phone.svg';
-import arrowIcon from '@assets/svg/arrow.svg';
 import { TAppHeaderUIProps } from './types';
+import { Dropdown } from '../../dropdown';
+import { dropdownServices, dropdownLanguage } from '../../../mock';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {
   const navigate = useNavigate();
@@ -24,17 +25,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {
           </NavLink>
         </div>
         <div className={styles.navMenu}>
-          <NavLink
-            to='/services'
-            className={({ isActive }) => getClassName(isActive)}
-          >
-            Services
-            <img
-              src={arrowIcon}
-              alt='arrow icon'
-              className={styles.arrowIcon}
-            />
-          </NavLink>
+          <Dropdown items={dropdownServices} />
           <NavLink
             to='/contacts'
             className={({ isActive }) => getClassName(isActive)}
@@ -51,13 +42,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = () => {
       </nav>
 
       <div className={styles.settings}>
-        <button
-          aria-label='Select language'
-          className={`${styles.headerText} ${styles.button} ${styles.languageButton}`} //TODO Реализовать полноценное переключение языка
-        >
-          ENG
-          <img className={styles.arrowIcon} src={arrowIcon} alt='arrow icon' />
-        </button>
+        <Dropdown items={dropdownLanguage} mode='language' />
         <button
           className={`${styles.headerText} ${styles.button} ${styles.phoneButton}`}
         >

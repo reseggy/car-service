@@ -28,7 +28,6 @@ import serviceOil from '@assets/photos/serviceOil.png';
 import serviceWheel from '@assets/photos/serviceWheel.png';
 
 import { TCar } from './types/types';
-import { TServiceListElement } from './types/types';
 
 export const carItems: TCar[] = [
   {
@@ -396,4 +395,26 @@ export const servicesElementsAdditional = [
     imgSrc: serviceBrake,
     imgAlt: 'brake system repair'
   }
+];
+
+export const dropdownServices = [
+  { id: 1, text: 'Complete service for all makes of cars' },
+  { id: 2, text: 'Air conditioning servicing, filling and cleaning' },
+  { id: 3, text: '3D Geometry' },
+  { id: 4, text: 'Full films, protective and darkening films for glass' },
+  { id: 5, text: 'Ceramics' },
+  { id: 6, text: 'Bodywork parts' },
+  { id: 7, text: 'Car sales and rental' },
+  { id: 8, text: 'Painting of all parts' },
+  { id: 9, text: 'Stk and transcription of vehicles' },
+  {
+    id: 10,
+    text: 'Tyre service for passenger, off-road and commercial vehicles'
+  },
+  { id: 11, text: 'Vehicle washing and interior cleaning' }
+];
+
+export const dropdownLanguage = [
+  { id: 1, text: 'ENG' },
+  { id: 2, text: 'CZ' }
 ];

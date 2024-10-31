@@ -75,12 +75,6 @@
   width: 15px;
   height: 15px;
 }
-
-.languageButton:hover {
-  border: 1px solid var(--elements-background);
-  background: var(--elements-background);
-}
-
 .phoneLink {
   text-decoration: none;
 }

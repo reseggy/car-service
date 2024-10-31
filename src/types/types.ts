@@ -24,3 +24,8 @@ export interface TServiceListElement {
   imgSrc: string;
   imgAlt: string;
 }
+
+export interface IDropdownItem {
+  text: string;
+  id: number;
+}
