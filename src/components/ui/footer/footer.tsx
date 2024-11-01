@@ -5,7 +5,7 @@ import adressIcon from '@assets/svg/address.svg';
 import facebookIcon from '@assets/svg/facebook.svg';
 import XIcon from '@assets/svg/xIcon.svg';
 import { TFooterProps } from './types';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 
 export const FooterUI: FC<TFooterProps> = ({
   postFooterLinks,
@@ -85,17 +85,15 @@ export const FooterUI: FC<TFooterProps> = ({
         <div className={styles.services}>
           <h5 className={`${styles.footerText} ${styles.title}`}>Services</h5>
           <div className={styles.serviceOffers}>
-            {Object.entries(servicesLinks).map(
-              ([serviceText, serviceTarget], index) => (
-                <a
-                  key={index}
-                  href={serviceTarget}
-                  className={`${styles.footerText} ${styles.serviceOffer}`}
-                >
-                  {serviceText}
-                </a>
-              )
-            )}
+            {servicesLinks.map((serviceText, index) => (
+              <NavLink
+                to='/services'
+                key={index}
+                className={`${styles.footerText} ${styles.serviceOffer}`}
+              >
+                {serviceText}
+              </NavLink>
+            ))}
           </div>
         </div>
       </div>

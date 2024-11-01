@@ -9,13 +9,13 @@ export const Footer: FC = () => {
     Sitemap: '#'
   };
 
-  const servicesLinks = {
-    'Bodywork parts': '/services',
-    'Stk and transcription of vehicles': '/services',
-    Ceramics: '/services',
-    'Vehicle washing and interior cleaning': '/services',
-    '3D Geometry': '/services'
-  };
+  const servicesLinks = [
+    'Bodywork parts',
+    'Stk and transcription of vehicles',
+    'Ceramics',
+    'Vehicle washing and interior cleaning',
+    '3D Geometry'
+  ];
   return (
     <FooterUI postFooterLinks={postFooterLinks} servicesLinks={servicesLinks} />
   );
