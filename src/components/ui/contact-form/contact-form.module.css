@@ -30,7 +30,7 @@
 
 .map {
   min-height: 430px;
-  background-color: red;
+  background-color: var(--elements-background);
 }
 
 .form {
@@ -64,4 +64,9 @@
 
 .contactPhoneText:hover {
   color: var(--additional-color);
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
 }
