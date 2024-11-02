@@ -1,0 +1,67 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 933px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contactContent {
+  display: flex;
+  gap: 35px;
+}
+
+.address {
+  max-width: 449px;
+  min-width: 449px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.map {
+  min-height: 430px;
+  background-color: red;
+}
+
+.form {
+  min-width: 449px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.text {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactPhoneText {
+  text-decoration: none;
+}
+
+.contactPhoneText:hover {
+  color: var(--additional-color);
+}

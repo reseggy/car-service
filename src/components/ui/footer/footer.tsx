@@ -104,13 +104,13 @@ export const FooterUI: FC<TFooterProps> = ({
         <div className={styles.postFooterLinks}>
           {Object.entries(postFooterLinks).map(
             ([LinkText, linkTarget], index) => (
-              <a
+              <NavLink
                 key={index}
-                href={linkTarget}
+                to={linkTarget}
                 className={`${styles.footerText} ${styles.postFooterLink}`}
               >
                 {LinkText}
-              </a>
+              </NavLink>
             )
           )}
         </div>
