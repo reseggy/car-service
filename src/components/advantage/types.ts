@@ -1,4 +1,4 @@
-export interface IAdvantageProps {
+export interface TAdvantageProps {
   title: string;
   text: string;
   imgSrc?: string;

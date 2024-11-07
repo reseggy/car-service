@@ -1,8 +1,8 @@
-import { IAdvantageProps } from './types';
+import { TAdvantageProps } from './types';
 import { FC } from 'react';
 import styles from './advantage.module.css';
 
-export const AdvantageUI: FC<IAdvantageProps> = ({
+export const AdvantageUI: FC<TAdvantageProps> = ({
   title,
   text,
   imgSrc,

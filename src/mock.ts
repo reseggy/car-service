@@ -464,3 +464,27 @@ export const benefitsAdvantages = [
     text: "Our collaboration with verified suppliers allows us to provide quality spare parts and materials for every type of vehicle. Combined with our bespoke services, you get a complete service that matches your car's exact needs."
   }
 ];
+
+export const servicesOffers = [
+  {
+    text: 'Regular technical inspections and diagnostics'
+  },
+  {
+    text: 'Engine, brake, chassis and electronics repairs'
+  },
+  {
+    text: 'Oil and filter changes'
+  },
+  {
+    text: 'Wheel alignment'
+  },
+  {
+    text: 'Air conditioning service and coolant replacement'
+  },
+  {
+    text: 'Tyre service and seasonal retreading'
+  },
+  {
+    text: 'Expert advice and consultation'
+  }
+];

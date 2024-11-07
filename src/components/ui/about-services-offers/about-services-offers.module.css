@@ -1,0 +1,34 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1175px;
+}
+
+.title {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mainWords {
+  color: var(--additional-color);
+}
+
+.offers {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.text {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}

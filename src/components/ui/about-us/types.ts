@@ -1,5 +1,5 @@
-import { advantage } from '../../../types/types';
+import { TAdvantage } from '../../../types/types';
 
 export interface AboutUsUIProps {
-  advantages: advantage[];
+  advantages: TAdvantage[];
 }

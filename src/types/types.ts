@@ -30,9 +30,13 @@ export interface IDropdownItem {
   id: number;
 }
 
-export interface advantage {
+export interface TAdvantage {
   title: string;
   text: string;
   imgSrc?: string;
   imgAlt?: string;
+}
+
+export interface TAboutServicesOffer {
+  text: string;
 }
