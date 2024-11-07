@@ -1,5 +1,5 @@
 import { advantage } from '../../../types/types';
 
-export interface AboutUsUIProps {
+export interface BenefitsUIProps {
   advantages: advantage[];
 }

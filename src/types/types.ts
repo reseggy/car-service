@@ -29,3 +29,10 @@ export interface IDropdownItem {
   text: string;
   id: number;
 }
+
+export interface advantage {
+  title: string;
+  text: string;
+  imgSrc?: string;
+  imgAlt?: string;
+}

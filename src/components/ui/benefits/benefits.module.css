@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  max-width: 1417px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+  gap: 23px;
+}

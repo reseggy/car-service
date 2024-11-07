@@ -10,13 +10,14 @@ import {
   carItems,
   userItems,
   instagramItems,
-  servicesElementsMain
+  servicesElementsMain,
+  aboutUsAdvantages
 } from '../../mock.ts';
 export const HomePage: FC = () => {
   return (
     <div className={styles.page}>
       <WelcomeComponent />
-      <AboutUs />
+      <AboutUs advantages={aboutUsAdvantages} />
       <OurServices servicesElements={servicesElementsMain} target='main' />
       <SaleCarsCarousel items={carItems} />
       <FeedbackCarousel feedbacks={userItems} />

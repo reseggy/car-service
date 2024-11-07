@@ -9,7 +9,9 @@
   justify-content: flex-start;
   gap: 30px;
   min-height: 339px;
-  max-width: 339.25px;
+  max-height: 393px;
+  min-width: 339.25px;
+  max-width: 457px;
   backdrop-filter: blur(20px);
 }
 
@@ -29,6 +31,22 @@
   transition:
     box-shadow 0.3s ease-in-out,
     scale 0.5s ease-in-out;
+}
+
+.advantageСounter {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantageText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .advantageTitle {

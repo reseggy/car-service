@@ -418,3 +418,49 @@ export const dropdownLanguage = [
   { id: 1, text: 'ENG' },
   { id: 2, text: 'CZ' }
 ];
+import gearIcon from '@assets/svg/gear.svg';
+import engineIcon from '@assets/svg/engine.svg';
+import wrenchIcon from '@assets/svg/wrench.svg';
+import handshakeIcon from '@assets/svg/handshake.svg';
+
+export const aboutUsAdvantages = [
+  {
+    title: 'Professional services',
+    text: 'Our experienced craftsmen provide high quality service to your vehicle, solving any problems.',
+    imgSrc: gearIcon,
+    imgAlt: 'icon professional services'
+  },
+  {
+    title: 'Fast repairs',
+    text: "We value your time and offer prompt solutions to your vehicle's problems, minimizing downtime.",
+    imgSrc: engineIcon,
+    imgAlt: 'icon fast repairs'
+  },
+  {
+    title: 'Guaranteed quality',
+    text: 'We use only top-quality parts and materials, ensuring long-term reliability of your vehicle.',
+    imgSrc: wrenchIcon,
+    imgAlt: 'icon guaranteed quality'
+  },
+  {
+    title: 'Customer-oriented approach',
+    text: 'We strive for complete customer satisfaction by providing personalized service and support.',
+    imgSrc: handshakeIcon,
+    imgAlt: 'icon customer-oriented approach'
+  }
+];
+
+export const benefitsAdvantages = [
+  {
+    title: 'Express diagnostics and repairs',
+    text: 'Fast and accurate diagnostics is our first step to your satisfaction. With advanced diagnostic tools and an experienced team of experts, we will detect problems immediately and proceed to efficient repairs. Your vehicle will be back on the road in the shortest possible time.'
+  },
+  {
+    title: 'Individual approach and customer service',
+    text: 'Every customer is unique to us, which is why we approach service with individual attention to your needs. We provide expert advice, transparent information about the work carried out and always strive to find the optimal solution for each client.'
+  },
+  {
+    title: 'Quality spare parts and customized services',
+    text: "Our collaboration with verified suppliers allows us to provide quality spare parts and materials for every type of vehicle. Combined with our bespoke services, you get a complete service that matches your car's exact needs."
+  }
+];

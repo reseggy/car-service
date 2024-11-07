@@ -6,9 +6,16 @@ export const Advantage: FC<IAdvantageProps> = ({
   title,
   text,
   imgSrc,
-  imgAlt
+  imgAlt,
+  counter
 }) => {
   return (
-    <AdvantageUI title={title} text={text} imgSrc={imgSrc} imgAlt={imgAlt} />
+    <AdvantageUI
+      title={title}
+      text={text}
+      imgSrc={imgSrc}
+      imgAlt={imgAlt}
+      counter={counter}
+    />
   );
 };
