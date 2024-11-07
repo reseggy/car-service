@@ -87,7 +87,7 @@ export const FooterUI: FC<TFooterProps> = ({
           <div className={styles.serviceOffers}>
             {servicesLinks.map((serviceText, index) => (
               <NavLink
-                to='/services'
+                to='/about-services'
                 key={index}
                 className={`${styles.footerText} ${styles.serviceOffer}`}
               >
