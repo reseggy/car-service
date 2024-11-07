@@ -1,0 +1,11 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 100px;
+}

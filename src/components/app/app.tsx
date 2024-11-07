@@ -7,6 +7,8 @@ import { AppHeader } from '../app-header';
 import { Footer } from '../footer';
 import { OurServicesPage } from '../../pages/our-services-page';
 import { ContactPage } from '../../pages/contact-page';
+import { AboutServicesPage } from '../../pages/about-services-page';
+import { UnknownPage } from '../../pages/unknown-page';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path='/sale-cars' element={<SaleCarsPage />} />
         <Route path='/services' element={<OurServicesPage />} />
         <Route path='/contacts' element={<ContactPage />} />
+        <Route path='/about-services' element={<AboutServicesPage />} />
+        <Route path='*' element={<UnknownPage />} />
       </Routes>
       <Footer />
     </div>
