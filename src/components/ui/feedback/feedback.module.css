@@ -51,3 +51,20 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+@media (max-width: 576px) {
+  .feedbackContainer {
+    max-width: 98%;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .person {
+    gap: 5px;
+  }
+
+  .personImg {
+    width: 55px;
+    height: 55px;
+  }
+}

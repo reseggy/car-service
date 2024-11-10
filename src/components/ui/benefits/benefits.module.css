@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 23px;
-  max-width: 1417px;
+  max-width: 100%;
 }
 
 .title {
@@ -16,6 +16,40 @@
 }
 
 .advantages {
+  max-width: 100%;
   display: flex;
+  align-items: center;
   gap: 23px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--primary-color) var(--background); /* Firefox */
+}
+
+@media (max-width: 576px) {
+  .section {
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.advantages::-webkit-scrollbar {
+  height: 8px;
+}
+
+.advantages::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.advantages::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: 2px solid var(--background);
 }

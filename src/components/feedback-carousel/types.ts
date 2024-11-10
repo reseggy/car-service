@@ -6,4 +6,6 @@ interface TFeedbackProps {
 
 export interface TFeedbackCarouselProps {
   feedbacks: TFeedbackProps[];
+  slidesToShow: number;
+  slidesToScroll: number;
 }

@@ -46,11 +46,7 @@ export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
       <div className={styles.icons}>
         <div className={styles.iconsGroup}>
           <img src={iconLike} alt='icon like' className={styles.icon} />
-          <img
-            src={iconComment}
-            alt='icon comment'
-            className={styles.iconComment}
-          />
+          <img src={iconComment} alt='icon comment' className={styles.icon} />
           <img src={iconShare} alt='icon share' className={styles.icon} />
         </div>
 

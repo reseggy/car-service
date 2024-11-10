@@ -9,10 +9,14 @@
   justify-content: flex-start;
   gap: 30px;
   min-height: 339px;
-  max-height: 393px;
-  min-width: 339.25px;
-  max-width: 457px;
+  max-height: 339px;
+  max-width: 339.25px;
   backdrop-filter: blur(20px);
+}
+
+.advantageBig {
+  min-height: 393px;
+  max-width: 457px;
 }
 
 .advantage:hover .advantageIcon {
@@ -66,4 +70,38 @@
   font-weight: 400;
   line-height: 150%;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .advantage {
+    min-width: 255px;
+    min-height: 294px;
+    max-height: 294px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .advantageIcon {
+    min-width: 55px;
+    min-height: 55px;
+  }
+
+  .advantageImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .advantageTitle {
+    font-size: 26px;
+    line-height: 100%;
+  }
+
+  .subsectionText {
+    font-size: 16px;
+  }
+
+  .advantageBig {
+    min-width: 255px;
+    min-height: 462px;
+  }
 }

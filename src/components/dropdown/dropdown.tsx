@@ -4,7 +4,7 @@ import { IDropdownProps } from './types';
 import { useNavigate } from 'react-router-dom';
 import { IDropdownItem } from '../../types/types';
 
-export const Dropdown: FC<IDropdownProps> = ({ items, mode }) => {
+export const Dropdown: FC<IDropdownProps> = ({ items, mode, onLinkClick }) => {
   const navigate = useNavigate();
   const [currentItem, setCurrentItem] = useState<IDropdownItem | null>(null);
 
@@ -20,6 +20,9 @@ export const Dropdown: FC<IDropdownProps> = ({ items, mode }) => {
       navigate('/services');
     }
     setIsOpen(false);
+    if (onLinkClick) {
+      onLinkClick();
+    }
   };
 
   return (

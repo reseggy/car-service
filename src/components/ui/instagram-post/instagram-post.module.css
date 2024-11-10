@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .avatar {
@@ -79,7 +79,7 @@
 }
 
 .mainPhoto {
-  width: 417px;
+  min-width: 100%;
   height: 417px;
   object-fit: cover;
   transition: box-shadow 0.3s ease-in-out;
@@ -132,4 +132,87 @@
 
 .footerUsername {
   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .post {
+    min-width: 300px;
+    max-height: 406px;
+    padding: 13px;
+  }
+
+  .postHeader {
+    min-height: 35px;
+  }
+
+  .mainPhoto {
+    max-width: 100%;
+    max-height: 273px;
+  }
+
+  .headerUser {
+    gap: 5px;
+  }
+
+  .avatar {
+    width: 21.28px;
+    height: 21.28px;
+  }
+
+  .storyRing {
+    top: -1.995px; /* вычесть из размера кольца размер аватарки и поделить на 2 */
+    left: -1.995px;
+    width: 25.27px;
+    height: 25.27px;
+  }
+
+  .headerPhoto {
+    width: 21.28px;
+    height: 21.28px;
+  }
+
+  .headerInfo {
+    gap: 1.5px;
+  }
+
+  .headerUsername {
+    font-size: 8.42px;
+    line-height: 10px;
+  }
+
+  .headerText {
+    font-size: 7.72px;
+    line-height: 9px;
+  }
+
+  .icons {
+    margin: 7px 0;
+  }
+
+  .iconsGroup {
+    gap: 9px;
+  }
+
+  .icon {
+    height: 17px;
+    width: 17px;
+  }
+
+  .postFooter {
+    gap: 4px;
+  }
+
+  .footerLikes {
+    font-size: 9.83px;
+  }
+
+  .footerText {
+    font-size: 9.83px;
+    line-height: 12px;
+  }
+
+  .headerIcon {
+    width: 17px;
+    height: 17px;
+  }
 }

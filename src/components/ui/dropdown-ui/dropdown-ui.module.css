@@ -1,6 +1,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 2;
 }
 
 .text {
@@ -43,9 +44,7 @@
 }
 
 .dropdownToggleLanguage {
-  max-width: 94px;
-  min-width: 94px;
-  padding: 12px 20px;
+  width: 94px;
   border: 1px solid rgb(112, 112, 112);
 }
 
@@ -96,4 +95,26 @@
 .dropdownItem:hover {
   background-color: rgb(45, 44, 44);
   color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+  .dropdownToggle {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(112, 112, 112);
+  }
+  .dropdownToggleLanguage {
+    background-color: transparent;
+  }
+
+  .dropdownToggleLanguageOpen {
+    border-color: rgb(112, 112, 112);
+  }
+
+  .dropdownToggleLanguage:hover {
+    border-color: rgb(112, 112, 112);
+  }
 }

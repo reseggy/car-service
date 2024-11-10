@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 1417px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .mainFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 40px 0;
 }
 
@@ -20,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 100%;
 }
 
 .footerText {
@@ -41,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 100%;
 }
 
 .contactItem {
@@ -48,6 +48,12 @@
   flex-direction: row;
   gap: 5px;
   align-items: center;
+}
+
+.phoneIcon {
+  width: 17px;
+  height: 17px;
+  margin: auto 0;
 }
 
 .contactPhoneText,
@@ -80,12 +86,13 @@
   align-items: center;
   justify-content: center;
   padding: 12px;
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  max-height: 48px;
 }
 
 .contactBigButton {
-  padding: 12px 60px;
+  padding: 12px 0;
+  flex-grow: 1;
   font-size: 16px;
   font-weight: 600;
 }
@@ -141,4 +148,68 @@
   flex-direction: row;
   align-items: center;
   gap: 30px;
+}
+
+@media (max-width: 576px) {
+  .mainFooter {
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 40px 28px;
+    align-items: center;
+  }
+
+  .title {
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contactItem {
+    gap: 4px;
+  }
+
+  .contactAdress {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  .contactBigButton {
+    text-wrap: nowrap;
+  }
+
+  .serviceOffers {
+    align-items: center;
+  }
+
+  .table {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+
+  .tableElement {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    min-width: 140px;
+  }
+
+  .postFooter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 14px;
+  }
+
+  .postFooterLinks {
+    min-width: 100%;
+    justify-content: space-between;
+  }
 }

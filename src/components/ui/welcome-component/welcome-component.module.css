@@ -1,16 +1,10 @@
-.home_page {
+.section {
   display: flex;
   flex-direction: column;
-  min-width: 1914px;
+  align-items: flex-start;
+  max-width: 100%;
   min-height: 953px;
   padding-top: 106px;
-  padding-left: 252px;
-  background-image: url('../../../assets/photos/car.png'),
-    url('../../../assets/svg/effect.svg');
-  background-repeat: no-repeat;
-  background-position:
-    777px 110px,
-    975px 50px;
 }
 
 .text {
@@ -82,4 +76,47 @@
 
 .button_catalog:disabled {
   background: var(--additional-color-active);
+}
+
+@media (max-width: 576px) {
+  .section {
+    min-height: 600px;
+    padding-top: 0;
+  }
+
+  .title {
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .title_main {
+    font-size: 50px;
+  }
+
+  .logo {
+    margin-left: 15px;
+    padding: 0;
+    max-width: 105px;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    font-size: 16px;
+    letter-spacing: 0%;
+  }
+
+  .catalog {
+    gap: 20px;
+  }
+
+  .button_catalog {
+    max-width: 165px;
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  .buttonIcon {
+    width: 13.5px;
+    height: 13.5px;
+  }
 }

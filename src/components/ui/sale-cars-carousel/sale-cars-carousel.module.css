@@ -1,6 +1,6 @@
 .saleCarsSection {
   padding: 40px 0;
-  max-width: 1417px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,4 +81,10 @@
   /* global is added to access the class to change the styles of the active dot */
   background-color: var(--additional-color);
   width: 30px;
+}
+
+@media (max-width: 576px) {
+  .saleCarsSection {
+    padding: 20px 0;
+  }
 }

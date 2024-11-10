@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
   height: 100%;
   width: 100%;
   background-color: var(--background);
@@ -15,4 +14,75 @@
     -93px -187px,
     0px 1222px,
     -754px 2164px;
+}
+
+.contentApp {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 74.034%;
+}
+
+.appHome {
+  background-image: url('../../assets/photos/car.png'),
+    url('../../assets/svg/background-line.svg'),
+    url('../../assets/svg/background-line2.svg'),
+    url('../../assets/svg/background-line3.svg'),
+    url('../../assets/svg/effect.svg');
+  background-position:
+    right 0px top 95px,
+    -93px -187px,
+    0px 1222px,
+    -754px 2164px,
+    975px 200px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  .contentApp {
+    gap: 60px;
+    width: 90%;
+  }
+
+  .app {
+    background-image: url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg');
+    background-position:
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px;
+  }
+
+  .appHome {
+    background-size: 470px, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/carMobile.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 190px,
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px,
+      -150px -100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .appHome {
+    background-size: auto, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/carMobile.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 280px,
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px,
+      -150px -100px;
+  }
 }

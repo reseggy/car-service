@@ -21,7 +21,11 @@ export const FooterUI: FC<TFooterProps> = ({
           <address className={styles.contacts}>
             {['+42060134332', '+220601343321'].map((phone, index) => (
               <div key={index} className={styles.contactItem}>
-                <img src={phoneIcon} alt='phone icon' />
+                <img
+                  src={phoneIcon}
+                  alt='phone icon'
+                  className={styles.phoneIcon}
+                />
                 <a
                   href={`tel:${phone}`}
                   className={`${styles.footerText} ${styles.contactPhoneText}`}
@@ -70,7 +74,9 @@ export const FooterUI: FC<TFooterProps> = ({
           <div className={styles.table}>
             {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((day, index) => (
               <div key={index} className={styles.tableElement}>
-                <p className={`${styles.footerText}`}>{day}</p>
+                <p className={`${styles.footerText} ${styles.tableDay}`}>
+                  {day}
+                </p>
                 <p className={`${styles.footerText}`}>
                   {index < 5
                     ? '7:30 - 18:00'

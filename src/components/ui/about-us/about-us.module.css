@@ -1,5 +1,5 @@
 .section {
-  max-width: 1417px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +22,7 @@
   border-radius: 20px;
   background-color: var(--elements-background);
   backdrop-filter: blur(20px);
+  max-width: 100%;
 }
 
 .titleSection {
@@ -40,8 +41,8 @@
 }
 
 .carImg {
-  min-width: 366px;
-  max-height: 35px;
+  width: 366px;
+  height: 35px;
   object-fit: cover;
   border-radius: 10px;
   object-position: 0 -35px;
@@ -55,9 +56,55 @@
 }
 
 .subsection {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--primary-color) var(--background); /* Firefox */
+}
+
+@media (max-width: 576px) {
+  .mainSection {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .titleSection {
+    min-width: 100%;
+    gap: 5px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .mainSectionText {
+    font-size: 16px;
+  }
+
+  .carImg {
+    width: 100%;
+  }
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.subsection::-webkit-scrollbar {
+  height: 8px;
+}
+
+.subsection::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.subsection::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: 2px solid var(--background);
 }

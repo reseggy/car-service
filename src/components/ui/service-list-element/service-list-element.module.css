@@ -1,5 +1,5 @@
 .item {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .itemAdditional {
@@ -8,7 +8,7 @@
 
 .button {
   display: flex;
-  min-width: 100%;
+  max-width: 100%;
   padding: 20px;
   backdrop-filter: blur(20px);
   border: 1px solid var(--elements-border);
@@ -31,16 +31,16 @@
   padding: 20px;
 }
 
-.button:hover .image {
-  scale: 1.05;
-  box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.25);
-}
-
 .image {
   border-radius: 15px;
   transition:
     box-shadow 0.3s ease-in-out,
     scale 0.5s ease-in-out;
+}
+
+.button:hover .image {
+  scale: 1.05;
+  box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.25);
 }
 
 .imageMain {
@@ -100,4 +100,28 @@
 
 .textAdditional {
   font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .buttonMain {
+    flex-direction: column;
+    gap: 20px;
+    max-height: fit-content;
+  }
+
+  .imageMain {
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover;
+  }
+
+  .titleMain {
+    line-height: 100%;
+    font-size: 20px;
+  }
+
+  .textMain {
+    font-size: 16px;
+    text-overflow: clip;
+  }
 }

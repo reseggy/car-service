@@ -10,7 +10,9 @@ export const AdvantageUI: FC<TAdvantageProps> = ({
   counter
 }) => {
   return (
-    <div className={styles.advantage}>
+    <div
+      className={`${styles.advantage} ${counter ? styles.advantageBig : ''}`}
+    >
       <div className={styles.advantageIcon}>
         {imgSrc && (
           <img src={imgSrc} alt={imgAlt} className={styles.advantageImg} />

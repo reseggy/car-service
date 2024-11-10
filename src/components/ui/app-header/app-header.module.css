@@ -1,9 +1,11 @@
 .header {
   display: flex;
   flex-direction: row;
-  gap: 293px;
-  justify-content: center;
-  min-height: 127px;
+  justify-content: space-between;
+  padding: 40px 0;
+  max-height: 127px;
+  width: 100%;
+  gap: 150px;
 }
 
 .headerText {
@@ -16,7 +18,8 @@
 
 .navContainer {
   display: flex;
-  gap: 142px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navMenu {
@@ -30,6 +33,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .navLink {
@@ -63,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
+  background-color: transparent;
   border: 1px solid rgb(112, 112, 112);
   border-radius: 50px;
   padding: 12px 20px;
@@ -105,4 +110,15 @@
 
 .contactButton:disabled {
   background: var(--additional-color-disabled);
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    display: none;
+  }
+
+  .header {
+    padding: 22px 0;
+    gap: 0;
+  }
 }
