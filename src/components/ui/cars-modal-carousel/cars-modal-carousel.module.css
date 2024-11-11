@@ -1,6 +1,5 @@
 .carousel {
-  min-width: 691px;
-  max-width: 691px;
+  width: 100%;
 }
 
 .button {
@@ -96,4 +95,22 @@
 
 .arrowIconNext {
   transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .mainImg {
+    height: 203px;
+  }
+
+  .dotsContainer {
+    display: none;
+  }
+
+  .dotImage {
+    display: none;
+  }
+
+  .arrowContainer {
+    top: 98px;
+  }
 }

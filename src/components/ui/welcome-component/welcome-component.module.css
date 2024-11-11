@@ -5,6 +5,7 @@
   max-width: 100%;
   min-height: 953px;
   padding-top: 106px;
+  align-self: flex-start;
 }
 
 .text {

@@ -1,5 +1,5 @@
 .section {
-  max-width: 1417px;
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
   gap: 35px;
@@ -34,9 +34,32 @@
 }
 
 .image {
-  min-width: 691px;
-  max-height: 387px;
+  width: 691px;
+  height: 387px;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0px 0px 100px 0px rgba(221, 41, 63, 0.15);
+}
+
+@media (max-width: 576px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .image {
+    width: 100%;
+    max-height: 205px;
+  }
 }

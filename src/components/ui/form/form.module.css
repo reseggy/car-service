@@ -26,3 +26,9 @@
 .submitButton:active {
   background-color: rgb(176, 28, 45);
 }
+
+@media (max-width: 576px) {
+  .form {
+    gap: 10px;
+  }
+}

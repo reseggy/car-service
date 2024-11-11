@@ -9,7 +9,7 @@
   position: fixed;
   left: 350px;
   top: 207px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .carInfo {
@@ -78,4 +78,19 @@
 
 .carousel {
   max-width: 691px;
+}
+
+@media (max-width: 576px) {
+  .modal {
+    flex-direction: column;
+    min-width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 148px;
+  }
+
+  .carInfo {
+    min-width: fit-content;
+    gap: 40px;
+  }
 }

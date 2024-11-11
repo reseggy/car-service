@@ -29,10 +29,28 @@
 
 .listCars {
   display: flex;
-  gap: 19px;
   flex-wrap: wrap;
+  gap: 19px;
+  justify-content: center;
 }
 
 .listCar {
   min-width: 340px;
+}
+
+@media (max-width: 576px) {
+  .section {
+    gap: 40px;
+  }
+
+  .textSection {
+    align-items: flex-end;
+  }
+  .title {
+    font-size: 45px;
+  }
+
+  .listCar {
+    min-width: 100%;
+  }
 }

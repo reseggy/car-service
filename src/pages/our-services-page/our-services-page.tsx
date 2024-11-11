@@ -1,13 +1,15 @@
 import { FC } from 'react';
-import styles from './our-services.module.scss';
+import styles from './our-services-page.module.css';
 import { OurServices } from '../../components/our-services';
 import { servicesElementsAdditional } from '../../mock';
 
 export const OurServicesPage: FC = () => {
   return (
-    <OurServices
-      servicesElements={servicesElementsAdditional}
-      target='additional'
-    />
+    <div className={styles.page}>
+      <OurServices
+        servicesElements={servicesElementsAdditional}
+        target='additional'
+      />
+    </div>
   );
 };
