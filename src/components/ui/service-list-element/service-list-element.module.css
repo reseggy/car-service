@@ -3,12 +3,13 @@
 }
 
 .itemAdditional {
-  max-width: 340px;
+  min-width: 340px;
+  max-width: 99%;
 }
 
 .button {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   padding: 20px;
   backdrop-filter: blur(20px);
   border: 1px solid var(--elements-border);
@@ -49,7 +50,7 @@
 }
 
 .imageAdditional {
-  width: 300px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
 }
@@ -102,7 +103,13 @@
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
+  .imageMain {
+    width: 420px;
+  }
+}
+
+@media (max-width: 992px) {
   .buttonMain {
     flex-direction: column;
     gap: 20px;
@@ -123,15 +130,6 @@
   .textMain {
     font-size: 18px;
     text-overflow: clip;
-  }
-
-  .itemAdditional {
-    max-width: 100%;
-  }
-
-  .imageAdditional {
-    width: 100%;
-    height: 100px;
   }
 
   .titleAdditional {

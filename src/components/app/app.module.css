@@ -34,8 +34,104 @@
     -93px -187px,
     0px 1222px,
     -754px 2164px,
-    975px 200px;
+    right 0px top 200px;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1600px) {
+  .contentApp {
+    gap: 80px;
+    width: 90%;
+  }
+
+  .app {
+    background-image: url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg');
+    background-position:
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px;
+  }
+
+  .appHome {
+    background-size: 1000px, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/car.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line3.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 300px,
+      -93px -187px,
+      0px 1222px,
+      -754px 2164px,
+      right 0px top 190px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contentApp {
+    gap: 80px;
+    width: 90%;
+  }
+
+  .app {
+    background-image: url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg');
+    background-position:
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px;
+  }
+
+  .appHome {
+    background-size: 1000px, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/car.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line3.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 300px,
+      -93px -187px,
+      0px 1222px,
+      -754px 2164px,
+      right 0px top 190px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contentApp {
+    gap: 80px;
+    width: 90%;
+  }
+
+  .app {
+    background-image: url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg');
+    background-position:
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px;
+  }
+
+  .appHome {
+    background-size: 800px, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/car.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 300px,
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px,
+      right 0px top 190px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -66,7 +162,7 @@
       -1150px -387px,
       -1200px 800px,
       right 0px top 2000px,
-      -150px 70px;
+      right 0px top 70px;
   }
 }
 
@@ -98,7 +194,7 @@
       -1150px -387px,
       -1200px 800px,
       right 0px top 2000px,
-      -150px -100px;
+      right 0px top -100px;
   }
 }
 
@@ -115,6 +211,6 @@
       -1150px -387px,
       -1200px 800px,
       right 0px top 2000px,
-      -150px -100px;
+      right 0px top -100px;
   }
 }

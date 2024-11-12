@@ -9,13 +9,11 @@ export const useCarsCarouselSettings = () => {
   useEffect(() => {
     const updateSettings = () => {
       const width = window.innerWidth;
-      if (width < 576) {
+      if (width < 768) {
         setSettings({ slidesToShow: 1, slidesToScroll: 1 });
-      } else if (width < 768) {
-        setSettings({ slidesToShow: 1, slidesToScroll: 1 });
-      } else if (width < 992) {
+      } else if (width < 1400) {
         setSettings({ slidesToShow: 2, slidesToScroll: 2 });
-      } else if (width < 1200) {
+      } else if (width < 1850) {
         setSettings({ slidesToShow: 3, slidesToScroll: 3 });
       } else {
         setSettings({ slidesToShow: 4, slidesToScroll: 4 });

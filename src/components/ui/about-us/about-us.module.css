@@ -1,5 +1,6 @@
 .section {
   width: 100%;
+  max-width: 1417px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +86,7 @@
   border: 2px solid var(--background);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .mainSection {
     flex-direction: column;
     gap: 20px;
@@ -96,6 +97,13 @@
     gap: 10px;
   }
 
+  .carImg {
+    width: 100%;
+    object-position: 0 -80px;
+  }
+}
+
+@media (max-width: 768px) {
   .title {
     font-size: 65px;
   }
@@ -103,19 +111,9 @@
   .mainSectionText {
     font-size: 18px;
   }
-
-  .carImg {
-    width: 100%;
-    object-position: 0 -80px;
-  }
 }
 
 @media (max-width: 576px) {
-  .mainSection {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .titleSection {
     min-width: 100%;
     gap: 5px;

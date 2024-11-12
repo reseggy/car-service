@@ -1,5 +1,6 @@
 .post {
   max-width: 457px;
+  min-width: 457px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -134,7 +135,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .post {
     min-width: 300px;
     max-height: 406px;

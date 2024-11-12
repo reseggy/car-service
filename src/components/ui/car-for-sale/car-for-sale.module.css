@@ -1,5 +1,6 @@
 .item {
-  max-width: 339.25px;
+  min-width: 339.25px;
+  max-width: 99%;
 }
 
 .button {
@@ -67,11 +68,4 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
-}
-
-@media (max-width: 768px) {
-  .item {
-    max-width: none;
-    width: 99%;
-  }
 }
