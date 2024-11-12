@@ -28,8 +28,8 @@
 }
 
 .listCars {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 19px;
   justify-content: center;
 }
@@ -38,7 +38,7 @@
   min-width: 340px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section {
     gap: 40px;
   }
@@ -46,11 +46,30 @@
   .textSection {
     align-items: flex-end;
   }
+
+  .title {
+    font-size: 65px;
+  }
+
+  .listCars {
+    gap: 10px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
   .title {
     font-size: 45px;
   }
 
   .listCar {
     min-width: 100%;
+  }
+
+  .text {
+    font-size: 16px;
   }
 }

@@ -82,12 +82,22 @@
   width: 30px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .sectionTitle {
     flex-direction: column;
     gap: 5px;
   }
 
+  .title {
+    font-size: 65px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
   .title {
     font-size: 45px;
   }

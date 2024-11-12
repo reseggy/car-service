@@ -39,14 +39,24 @@
   justify-content: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section {
-    gap: 20px;
+    gap: 10px;
   }
 
   .sectionMain {
     background-image: url('../../../assets/svg/effect2Mobile.svg');
     background-position: center;
+  }
+
+  .title {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    gap: 20px;
   }
 
   .title {

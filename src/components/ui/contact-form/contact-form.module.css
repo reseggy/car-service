@@ -72,7 +72,7 @@
   border-radius: 20px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact {
     max-width: 100%;
   }
@@ -85,7 +85,7 @@
   }
 
   .title {
-    font-size: 43px;
+    font-size: 60px;
   }
 
   .address {
@@ -98,5 +98,11 @@
 
   .mapIframe {
     min-height: 430px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 43px;
   }
 }

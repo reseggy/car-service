@@ -27,9 +27,9 @@
   scrollbar-color: var(--primary-color) var(--background); /* Firefox */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section {
-    gap: 20px;
+    gap: 10px;
   }
 
   .title {
@@ -37,19 +37,8 @@
   }
 }
 
-/* Webkit browsers (Chrome, Safari) */
-.advantages::-webkit-scrollbar {
-  height: 8px;
-}
-
-.advantages::-webkit-scrollbar-track {
-  background: var(--background);
-  border-radius: 10px;
-  margin-bottom: 5px;
-}
-
-.advantages::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  border: 2px solid var(--background);
+@media (max-width: 576px) {
+  .section {
+    gap: 20px;
+  }
 }

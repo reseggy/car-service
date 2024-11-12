@@ -38,6 +38,38 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .contentApp {
+    gap: 60px;
+    width: 90%;
+  }
+
+  .app {
+    background-image: url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg');
+    background-position:
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px;
+  }
+
+  .appHome {
+    background-size: 600px, auto, auto, auto, auto;
+    background-image: url('../../assets/photos/car.png'),
+      url('../../assets/svg/background-line.svg'),
+      url('../../assets/svg/background-line2.svg'),
+      url('../../assets/svg/background-line4.svg'),
+      url('../../assets/svg/effect.svg');
+    background-position:
+      right 0px top 270px,
+      -1150px -387px,
+      -1200px 800px,
+      right 0px top 2000px,
+      -150px 70px;
+  }
+}
+
 @media (max-width: 576px) {
   .contentApp {
     gap: 60px;

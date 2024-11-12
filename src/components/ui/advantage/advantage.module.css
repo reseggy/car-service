@@ -8,8 +8,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
-  min-height: 339px;
-  max-height: 339px;
+  height: 339px;
   max-width: 339.25px;
   backdrop-filter: blur(20px);
 }
@@ -72,13 +71,12 @@
   text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .advantage {
     min-width: 255px;
-    min-height: 294px;
-    max-height: 294px;
+    height: 294px;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
   }
 
   .advantageIcon {
@@ -103,5 +101,11 @@
   .advantageBig {
     min-width: 255px;
     min-height: 462px;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantage {
+    gap: 20px;
   }
 }

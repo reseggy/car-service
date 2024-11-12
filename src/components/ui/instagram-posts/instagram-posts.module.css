@@ -44,28 +44,6 @@
   scrollbar-color: var(--primary-color) var(--background); /* Firefox */
 }
 
-@media (max-width: 576px) {
-  .sectionInstagram {
-    gap: 20px;
-  }
-
-  .sectionHeader {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .headerTitle {
-    font-size: 45px;
-    text-wrap: wrap;
-  }
-  .headerPhoto {
-    max-width: 100%;
-  }
-
-  .posts {
-    gap: 20px;
-  }
-}
-
 .posts::-webkit-scrollbar {
   height: 8px;
 }
@@ -80,4 +58,32 @@
   background-color: var(--primary-color);
   border-radius: 10px;
   border: 2px solid var(--background);
+}
+
+@media (max-width: 768px) {
+  .sectionInstagram {
+    gap: 20px;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .headerTitle {
+    font-size: 60px;
+    text-wrap: wrap;
+  }
+  .headerPhoto {
+    max-width: 100%;
+  }
+
+  .posts {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .headerTitle {
+    font-size: 45px;
+  }
 }

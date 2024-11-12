@@ -102,7 +102,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .buttonMain {
     flex-direction: column;
     gap: 20px;
@@ -117,11 +117,11 @@
 
   .titleMain {
     line-height: 100%;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .textMain {
-    font-size: 16px;
+    font-size: 18px;
     text-overflow: clip;
   }
 
@@ -136,5 +136,17 @@
 
   .titleAdditional {
     line-height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleMain {
+    line-height: 100%;
+    font-size: 20px;
+  }
+
+  .textMain {
+    font-size: 16px;
+    text-overflow: clip;
   }
 }

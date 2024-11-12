@@ -83,7 +83,7 @@
   width: 30px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .saleCarsSection {
     padding: 20px 0;
   }

@@ -69,7 +69,7 @@
   line-height: 150%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .item {
     max-width: none;
     width: 99%;

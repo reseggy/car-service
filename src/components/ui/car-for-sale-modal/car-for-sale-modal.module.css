@@ -80,13 +80,13 @@
   max-width: 691px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .modal {
     flex-direction: column;
     min-width: 90%;
     left: 5%;
     right: 5%;
-    top: 148px;
+    top: 50px;
   }
 
   .carInfo {
