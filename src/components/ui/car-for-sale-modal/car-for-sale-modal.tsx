@@ -14,7 +14,9 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = ({
 
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
-      e.key === 'Escape' && onClose();
+      if (e.key === 'Escape') {
+        onClose();
+      }
     };
 
     const handleClickOverlay = (e: MouseEvent) => {
