@@ -9,7 +9,7 @@ export default defineConfig({
   base: '/car-service/',
   build: {
     rollupOptions: {
-      input: './src/index.tsx'
+      input: './index.html'
     }
   },
   resolve: {
