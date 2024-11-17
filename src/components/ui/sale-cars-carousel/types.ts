@@ -10,6 +10,7 @@ interface TSettingsAdditional {
 }
 
 export interface TSaleCarsCarouselProps {
-  items: TCar[];
+  cars: TCar[] | null;
+  isLoading: boolean;
   settingsAdditional: TSettingsAdditional;
 }

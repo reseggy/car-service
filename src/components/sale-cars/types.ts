@@ -1,5 +1,6 @@
 import { TCar } from '../../types/types';
 
 export interface TSaleCarsProps {
-  items: TCar[];
+  items: TCar[] | null;
+  isLoading: boolean;
 }

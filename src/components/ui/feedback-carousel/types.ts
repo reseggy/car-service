@@ -14,6 +14,7 @@ interface TSettingsAdditional {
 }
 
 export interface TFeedbackCarouselProps {
-  feedbacks: TFeedbackProps[];
+  feedbacks: TFeedbackProps[] | null;
+  isLoading: boolean;
   settingsAdditional: TSettingsAdditional;
 }

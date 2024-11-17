@@ -2,8 +2,12 @@ import { FC } from 'react';
 import { TSaleCarsCarouselProps } from './types.ts';
 import { SaleCarsCarouselUI } from '../ui/sale-cars-carousel';
 
+import { useDispatch, useSelector } from '../../store/store';
+import { RootState } from '../../store/store';
+import { fetchCars } from '../../slices/carsSlice';
+import { useEffect } from 'react';
+
 export const SaleCarsCarousel: FC<TSaleCarsCarouselProps> = ({
-  items,
   slidesToShow,
   slidesToScroll
 }) => {
@@ -15,7 +19,19 @@ export const SaleCarsCarousel: FC<TSaleCarsCarouselProps> = ({
     slidesToScroll: slidesToScroll,
     arrows: false
   };
+
+  const dispatch = useDispatch();
+  const { cars, isLoading } = useSelector((state: RootState) => state.cars);
+
+  useEffect(() => {
+    dispatch(fetchCars());
+  }, [dispatch]);
+
   return (
-    <SaleCarsCarouselUI items={items} settingsAdditional={settingsAdditional} />
+    <SaleCarsCarouselUI
+      cars={cars}
+      isLoading={isLoading}
+      settingsAdditional={settingsAdditional}
+    />
   );
 };

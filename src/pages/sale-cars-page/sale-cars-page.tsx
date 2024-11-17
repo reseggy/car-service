@@ -1,7 +1,18 @@
 import { FC } from 'react';
 import { SaleCars } from '../../components/sale-cars';
-import { carItems } from '../../mock.ts';
+
+import { useDispatch, useSelector } from '../../store/store';
+import { RootState } from '../../store/store';
+import { fetchCars } from '../../slices/carsSlice';
+import { useEffect } from 'react';
 
 export const SaleCarsPage: FC = () => {
-  return <SaleCars items={carItems} />;
+  const dispatch = useDispatch();
+  const { cars, isLoading } = useSelector((state: RootState) => state.cars);
+
+  useEffect(() => {
+    dispatch(fetchCars());
+  }, [dispatch]);
+
+  return <SaleCars items={cars} isLoading={isLoading} />;
 };

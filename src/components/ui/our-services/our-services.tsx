@@ -2,10 +2,21 @@ import { FC } from 'react';
 import styles from './our-services.module.css';
 import { TOurServicesProps } from './types';
 import { ServiceListElement } from '../../service-list-element';
+import { Preloader } from '../preloader';
+
 export const OurServicesUI: FC<TOurServicesProps> = ({
   servicesElements,
+  isLoading,
   target
 }) => {
+  if (isLoading || !servicesElements) {
+    return (
+      <section className={`${styles.section} ${styles.sectionMain}`}>
+        <Preloader />
+      </section>
+    );
+  }
+
   return (
     <>
       {target === 'main' ? (

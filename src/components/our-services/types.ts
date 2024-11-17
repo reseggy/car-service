@@ -1,6 +1,7 @@
 import { TServiceListElement } from '../../types/types';
 
 export interface TOurServicesProps {
-  servicesElements: TServiceListElement[];
+  servicesElements: TServiceListElement[] | null;
+  isLoading?: boolean;
   target: string;
 }

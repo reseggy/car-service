@@ -5,9 +5,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './feedback-carousel.module.css';
 import { Feedback } from '../../feedback';
+import { Preloader } from '../preloader';
 
 export const FeedbackCarouselUI: FC<TFeedbackCarouselProps> = ({
   feedbacks,
+  isLoading,
   settingsAdditional
 }) => {
   const settings = {
@@ -19,6 +21,14 @@ export const FeedbackCarouselUI: FC<TFeedbackCarouselProps> = ({
     ),
     customPaging: () => <div className={styles.dot}></div>
   };
+
+  if (isLoading || !feedbacks) {
+    return (
+      <section className={styles.feedbackSection}>
+        <Preloader />
+      </section>
+    );
+  }
 
   return (
     <section className={styles.feedbackSection}>

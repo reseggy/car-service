@@ -40,3 +40,16 @@ export interface TAdvantage {
 export interface TAboutServicesOffer {
   text: string;
 }
+
+export interface TFeedbacks {
+  name: string;
+  review: string;
+  imgSrc: string;
+}
+
+export interface TService {
+  title: string;
+  text: string;
+  imgSrc: string;
+  imgAlt: string;
+}

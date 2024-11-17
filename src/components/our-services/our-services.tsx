@@ -4,7 +4,14 @@ import { TOurServicesProps } from './types';
 
 export const OurServices: FC<TOurServicesProps> = ({
   servicesElements,
+  isLoading,
   target
 }) => {
-  return <OurServicesUI servicesElements={servicesElements} target={target} />;
+  return (
+    <OurServicesUI
+      servicesElements={servicesElements}
+      isLoading={isLoading}
+      target={target}
+    />
+  );
 };

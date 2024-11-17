@@ -5,7 +5,7 @@
   padding: 30px 20px;
   min-width: 269px;
   max-width: 98%;
-  max-height: 333px;
+  min-height: 333px;
   gap: 20px;
   border: 1px solid var(--elements-border);
   border-radius: 20px;
