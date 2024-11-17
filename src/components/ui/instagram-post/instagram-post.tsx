@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { TInstagramPostProps } from './types';
 import styles from './instagram-post.module.css';
 import instagramAvatar from '@assets/photos/instagramAvatar.png';
@@ -9,7 +9,7 @@ import iconShare from '@assets/svg/iconShare.svg';
 import iconMarker from '@assets/svg/iconMarker.svg';
 import storyRing from '@assets/svg/storyRing.svg';
 
-export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
+export const InstagramPostUI: FC<TInstagramPostProps> = memo(({ item }) => {
   return (
     <div className={styles.post}>
       <div className={styles.postHeader}>
@@ -61,4 +61,4 @@ export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
       </div>
     </div>
   );
-};
+});

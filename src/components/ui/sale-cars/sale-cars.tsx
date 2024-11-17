@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { TSaleCarsProps } from './types.ts';
 import styles from './sale-cars.module.css';
 import { CarForSale } from '../../car-for-sale/car-for-sale.tsx';
 import { Preloader } from '../preloader/preloader.tsx';
 
-export const SaleCarsUI: FC<TSaleCarsProps> = ({ items, isLoading }) => {
+export const SaleCarsUI: FC<TSaleCarsProps> = memo(({ items, isLoading }) => {
   if (isLoading) {
     return (
       <section className={styles.section}>
@@ -38,4 +38,4 @@ export const SaleCarsUI: FC<TSaleCarsProps> = ({ items, isLoading }) => {
       </div>
     </section>
   );
-};
+});

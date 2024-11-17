@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import styles from './benefits.module.css';
 import { BenefitsUIProps } from './types';
 import { Advantage } from '../../advantage';
 
-export const BenefitsUI: FC<BenefitsUIProps> = ({ advantages }) => {
+export const BenefitsUI: FC<BenefitsUIProps> = memo(({ advantages }) => {
   return (
     <section className={styles.section}>
       <h3 className={styles.title}>Benefits</h3>
@@ -19,4 +19,4 @@ export const BenefitsUI: FC<BenefitsUIProps> = ({ advantages }) => {
       </div>
     </section>
   );
-};
+});

@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { TInstagramPosts } from './types';
 import styles from './instagram-posts.module.css';
 import { InstagramPost } from '../../instagram-post';
 import instagramCar from '@assets/photos/instagramCar.png';
 
-export const InstagramPostsUI: FC<TInstagramPosts> = ({ items }) => {
+export const InstagramPostsUI: FC<TInstagramPosts> = memo(({ items }) => {
   return (
     <div className={styles.sectionInstagram}>
       <div className={styles.sectionHeader}>
@@ -23,4 +23,4 @@ export const InstagramPostsUI: FC<TInstagramPosts> = ({ items }) => {
       </div>
     </div>
   );
-};
+});

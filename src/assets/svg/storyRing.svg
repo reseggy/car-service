@@ -1,13 +1,10 @@
-<svg width="38.491730" height="38.491699" viewBox="0 0 38.4917 38.4917" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs>
-		<linearGradient x1="42.543488" y1="4.051762" x2="0.000002" y2="29.881746" id="paint_linear_50_1197_0" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#C913B9"/>
-			<stop offset="0.500947" stop-color="#F9373F"/>
-			<stop offset="1.000000" stop-color="#FECD00"/>
-		</linearGradient>
-	</defs>
-	<circle id="Story ring" cx="19.245880" cy="19.245850" r="18.443956" stroke="url(#paint_linear_50_1197_0)" stroke-opacity="1.000000" stroke-width="1.603822"/>
+<svg width="38.492" height="38.492" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="42.543" y1="4.052" x2="0" y2="29.882" id="a" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C913B9"/>
+      <stop offset=".501" stop-color="#F9373F"/>
+      <stop offset="1" stop-color="#FECD00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="19.246" cy="19.246" r="18.444" stroke="url(#a)" stroke-width="1.604"/>
 </svg>
