@@ -34,5 +34,3 @@ export const CarForSaleModal: FC<TCarForSaleModalProps> = ({
     />
   );
 };
-
-//добавить анимацию для модалки

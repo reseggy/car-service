@@ -89,7 +89,7 @@
     left: 20%;
     right: 20%;
     top: 25px;
-    max-height: 100vh;
+    max-height: 90vh;
     transform: none;
   }
 
@@ -120,4 +120,26 @@
   .carousel {
     max-width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+  .carTitle {
+    font-size: 22px;
+  }
+
+  .carText {
+    font-size: 16px;
+  }
+
+  .carInfo {
+    gap: 20px;
+  }
+
+  .modal {
+    gap: 20px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }

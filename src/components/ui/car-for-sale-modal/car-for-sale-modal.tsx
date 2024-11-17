@@ -24,9 +24,13 @@ export const CarForSaleModalUI: FC<TCarForSaleModalProps> = memo(
       document.addEventListener('keydown', handleEsc);
       document.addEventListener('click', handleClickOverlay);
 
+      document.body.classList.add('no-scroll');
+
       return () => {
         document.removeEventListener('keydown', handleEsc);
         document.removeEventListener('click', handleClickOverlay);
+
+        document.body.classList.remove('no-scroll');
       };
     }, [onClose]);
 
