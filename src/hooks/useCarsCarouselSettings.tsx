@@ -26,7 +26,7 @@ export const useCarsCarouselSettings = () => {
     return () => {
       window.removeEventListener('resize', updateSettings);
     };
-  }, []);
+  }, [updateSettings]);
 
   return settings;
 };

@@ -1,5 +1,5 @@
-import { advantage } from '../../types/types';
+import { TAdvantage } from '../../types/types';
 
 export interface BenefitsProps {
-  advantages: advantage[];
+  advantages: TAdvantage[];
 }

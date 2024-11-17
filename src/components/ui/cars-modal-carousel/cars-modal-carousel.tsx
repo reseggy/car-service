@@ -67,8 +67,10 @@ export const CarsModalCarouselUI: FC<TCarsModalCarouselProps> = memo(
       prevArrow: (
         <SamplePrevArrow onClick={() => {}} disabled={currentSlide === 0} />
       ),
-      beforeChange: (oldIndex: number, newIndex: number) =>
-        setCurrentSlide(newIndex)
+      beforeChange: (
+        _oldIndex: number, //OldIndex is not used
+        newIndex: number
+      ) => setCurrentSlide(newIndex)
     };
 
     return (

@@ -30,7 +30,7 @@ export const useFeedbackCarouselSettings = () => {
     return () => {
       window.removeEventListener('resize', updateSettings);
     };
-  }, []);
+  }, [updateSettings]);
 
   return settings;
 };
