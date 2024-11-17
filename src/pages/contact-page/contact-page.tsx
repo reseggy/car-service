@@ -1,11 +1,19 @@
-import { FC } from 'react';
+import { FC, lazy, Suspense } from 'react';
 import styles from './contact-page.module.css';
-import { ContactForm } from '../../components/contact-form';
+import { Preloader } from '../../components/ui/preloader';
+
+const ContactForm = lazy(() =>
+  import('../../components/contact-form').then((module) => ({
+    default: module.ContactForm
+  }))
+);
 
 export const ContactPage: FC = () => {
   return (
     <div className={styles.page}>
-      <ContactForm />
+      <Suspense fallback={<Preloader />}>
+        <ContactForm />
+      </Suspense>
     </div>
   );
 };

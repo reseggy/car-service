@@ -1,13 +1,39 @@
-import { FC } from 'react';
+import { FC, lazy, Suspense } from 'react';
 import styles from './home-page.module.css';
 import { WelcomeComponent } from '../../components/welcome-component';
-import { AboutUs } from '../../components/about-us';
-import { OurServices } from '../../components/our-services';
-import { SaleCarsCarousel } from '../../components/sale-cars-carousel';
-import { FeedbackCarousel } from '../../components/feedback-carousel';
-import { InstagramPosts } from '../../components/instagram-posts';
+import { Preloader } from '../../components/ui/preloader';
 import { useCarsCarouselSettings } from '../../hooks/useCarsCarouselSettings';
 import { useFeedbackCarouselSettings } from '../../hooks/useFeedbackCarouselSettings';
+
+const AboutUs = lazy(() =>
+  import('../../components/about-us').then((module) => ({
+    default: module.AboutUs
+  }))
+);
+
+const OurServices = lazy(() =>
+  import('../../components/our-services').then((module) => ({
+    default: module.OurServices
+  }))
+);
+
+const SaleCarsCarousel = lazy(() =>
+  import('../../components/sale-cars-carousel').then((module) => ({
+    default: module.SaleCarsCarousel
+  }))
+);
+
+const FeedbackCarousel = lazy(() =>
+  import('../../components/feedback-carousel').then((module) => ({
+    default: module.FeedbackCarousel
+  }))
+);
+
+const InstagramPosts = lazy(() =>
+  import('../../components/instagram-posts').then((module) => ({
+    default: module.InstagramPosts
+  }))
+);
 
 import postPhoto1 from '@assets/photos/post1.jpg';
 import postPhoto2 from '@assets/photos/post2.png';
@@ -102,11 +128,26 @@ export const HomePage: FC = () => {
   return (
     <div className={styles.page}>
       <WelcomeComponent />
-      <AboutUs advantages={aboutUsAdvantages} />
-      <OurServices servicesElements={servicesElementsMain} target='main' />
-      <SaleCarsCarousel {...carouselCarsSettings} />
-      <FeedbackCarousel {...carouselFeedbackSettings} />
-      <InstagramPosts items={instagramItems} />
+
+      <Suspense fallback={<Preloader />}>
+        <AboutUs advantages={aboutUsAdvantages} />
+      </Suspense>
+
+      <Suspense fallback={<Preloader />}>
+        <OurServices servicesElements={servicesElementsMain} target='main' />
+      </Suspense>
+
+      <Suspense fallback={<Preloader />}>
+        <SaleCarsCarousel {...carouselCarsSettings} />
+      </Suspense>
+
+      <Suspense fallback={<Preloader />}>
+        <FeedbackCarousel {...carouselFeedbackSettings} />
+      </Suspense>
+
+      <Suspense fallback={<Preloader />}>
+        <InstagramPosts items={instagramItems} />
+      </Suspense>
     </div>
   );
 };

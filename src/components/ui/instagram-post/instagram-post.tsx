@@ -40,6 +40,7 @@ export const InstagramPostUI: FC<TInstagramPostProps> = ({ item }) => {
         src={item.imgSrc}
         alt='instagram photo'
         className={styles.mainPhoto}
+        loading='lazy'
       />
 
       <div className={styles.icons}>

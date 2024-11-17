@@ -23,6 +23,7 @@ export const ServiceListElementUI: FC<TServiceListElementProps> = ({
             className={`${styles.image} ${styles.imageMain}`}
             src={imgSrc}
             alt={imgAlt}
+            loading='lazy'
           />
           <div className={`${styles.itemText} ${styles.itemTextMain}`}>
             <h3 className={`${styles.title} ${styles.titleMain}`}>{title}</h3>
@@ -38,6 +39,7 @@ export const ServiceListElementUI: FC<TServiceListElementProps> = ({
             className={`${styles.image} ${styles.imageAdditional}`}
             src={imgSrc}
             alt={imgAlt}
+            loading='lazy'
           />
           <div className={`${styles.itemText} ${styles.itemTextAdditional}`}>
             <h3 className={`${styles.title} ${styles.titleAdditional}`}>

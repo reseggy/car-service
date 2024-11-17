@@ -13,6 +13,7 @@ export const InstagramPostsUI: FC<TInstagramPosts> = ({ items }) => {
           src={instagramCar}
           alt='instagram photo'
           className={styles.headerPhoto}
+          loading='lazy'
         />
       </div>
       <div className={styles.posts}>
