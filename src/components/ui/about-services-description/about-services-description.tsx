@@ -17,7 +17,12 @@ export const AboutServicesDescriptionUI: FC = () => {
           and safety of your vehicle.
         </p>
       </div>
-      <img className={styles.image} src={carRepair} alt='Car service' />
+      <img
+        className={styles.image}
+        src={carRepair}
+        alt='Car service'
+        loading='lazy'
+      />
     </section>
   );
 };
