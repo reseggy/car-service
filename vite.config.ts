@@ -6,7 +6,7 @@ const root = resolve(__dirname, 'src');
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/car-service/',
   build: {
     rollupOptions: {
       input: './src/index.tsx'

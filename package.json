@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/fetch-mock": "^7.3.8",
@@ -42,6 +43,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-storybook": "^0.9.0",
     "fetch-mock": "^12.2.0",
+    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "storybook": "^8.3.3",
