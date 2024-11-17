@@ -1,0 +1,1 @@
+import{j as e}from"./index-CL9fEBQx.js";const s="_preloader_66u36_1",o="_preloader_circle_66u36_17",l="_spin_66u36_1",r={preloader:s,preloader_circle:o,spin:l},a=()=>e.jsx("div",{className:r.preloader,children:e.jsx("div",{className:r.preloader_circle})});export{a as P};
