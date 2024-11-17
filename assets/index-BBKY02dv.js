@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-Bw9tkYzg.js","assets/index-Cr3XmiMq.js","assets/index-D-DqsolV.css","assets/index-CtDeF0zr.css"])))=>i.map(i=>d[i]);
+import{r as e,_ as s,j as t}from"./index-Cr3XmiMq.js";import{P as o}from"./preloader-DO4IQl-B.js";const r="_page_1qb9j_1",n={page:r},c=e.lazy(()=>s(()=>import("./index-Bw9tkYzg.js"),__vite__mapDeps([0,1,2,3])).then(a=>({default:a.ContactForm}))),l=()=>t.jsx("div",{className:n.page,children:t.jsx(e.Suspense,{fallback:t.jsx(o,{}),children:t.jsx(c,{})})});export{l as ContactPage};
