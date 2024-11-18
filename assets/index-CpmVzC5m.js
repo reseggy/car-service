@@ -1,1 +1,0 @@
-import{j as t}from"./index-B3KqFI9q.js";const s="_page_v4299_1",n="_title_v4299_15",e={page:s,title:n},o=()=>t.jsx("div",{className:e.page,children:t.jsx("h2",{className:e.title,children:"Page not found"})});export{o as UnknownPage};
